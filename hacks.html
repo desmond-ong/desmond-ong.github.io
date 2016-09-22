@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hacks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- my modifications -->
+    <link href="mycss.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    
+      <!-- Part 1: Wrap all page content here -->
+    <div class="wrap">
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="index.html">Desmond C. Ong</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="divider-vertical"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li class="active"><a href="hacks.html">Hacks</a></li>
+                <li><a href="others.html">Others</a></li>
+                
+                <!--
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              -->
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Begin page content -->
+      <div class="container">
+
+        <!--
+        <div class="page-header">
+          <h1>Sticky footer with fixed navbar</h1>
+        </div>
+        <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
+        -->
+
+        <div class="row-fluid">
+          <div class="span2">
+            <p>
+              This page contains a list of useful hacks that I've coded and/or collected from various places around the internet.
+            </p>
+            <p>
+              The few categories that I have so far relate to <em>Amazon Mechanical Turk</em>, <em>R</em>, <em>LaTeX</em>, <em>Mac OS X</em>.
+            </p>
+          </div> <!-- end span2 -->
+          <div class="span10">
+            <h3> 
+              #pin: Bonus workers on Amazon Mechanical Turk <span class='label label-mturk'>mTurk</span> 
+            </h3>
+            <p> 
+              I wrote a simple python script to automate awarding bonuses to workers on Mechanical Turk (mTurK). You can find it <a href="https://github.com/desmond-ong/amtBonusScript">here</a>.
+            </p>
+            <hr>
+
+            <h3> 
+              Programatically downloading .csv data from Qualtrics and reading it into R <span class='label label-R'>R</span> 
+            </h3>
+            I wrote an R function to do this at <a href="https://github.com/desmond-ong/QualtricsToR">https://github.com/desmond-ong/QualtricsToR</a>.
+            The readme on that page also has the plain cURL code and links to the Qualtrics API documentation so you can explore more!
+            <!-- <p> 
+              Here's a programmatic workflow for downloading your Qualtrics data into R. It requires cURL. <br><br>
+
+              0) First, ensure you have access to the Qualtrics API. (<a href = "https://api.qualtrics.com/docs/authentication">details</a>). 
+              <br>
+              Store your <b>API Token</b> in a safe place. <br>
+              While you're on this same Qualtrics IDs page, also store your <b>Survey ID</b> of the particular survey you want to download. <br>
+              1) Open Terminal. use cURL to send a "csv export" request to Qualtrics (<a href ="https://api.qualtrics.com/docs/csv">details</a>): <br>
+              <code>
+                &nbsp; curl -X POST -H 'X-API-TOKEN: ***API_TOKEN***' -H 'Content-Type: application/json' -d '{ <br>
+                &nbsp; &nbsp; "surveyId": "***SURVEY_ID***", <br>
+                &nbsp; &nbsp; "format": "csv" <br>
+                &nbsp; }' 'https://yourdatacenterid.qualtrics.com/API/v3/responseexports'
+              </code>
+              <br>
+              2) You should receive a 200 response with a <b>Result ID</b>. 
+              <br><code>
+                &nbsp; &nbsp;{"result":{"id":"***RESULT_ID***"},"meta":{"httpStatus":"200 - OK"}}
+              </code><br>
+              Use cURL again with this Result ID to download the file into a .zip file. (<a href="https://api.qualtrics.com/docs/get-response-export">details</a>)
+              <br>
+              <code>
+                &nbsp; curl -X GET -H "Content-Type: application/json" -H "X-API-TOKEN: ***API_TOKEN***" <br>
+                &nbsp; "https://yourdatacenterid.qualtrics.com/API/v3/responseexports/***RESULT_ID***/file" -o response.zip
+              </code><br>
+              3) After that, read it into R! <br>
+              <code>
+                &nbsp; csvFilename = "survey_name.csv" <br>
+                &nbsp; dSurvey = read.csv(csvFilename, header=FALSE, skip=3) <br>
+                &nbsp; variableNames = read.csv(csvFilename, header=TRUE, nrows=1) <br>
+                &nbsp; colnames(dSurvey) = colnames(variableNames) <br>
+                &nbsp; rm(variableNames)
+              </code>
+ -->
+              
+              
+            </p>
+            <hr>
+
+            <h3> 
+              colorMeText <!-- <span class='label label-mturk'>mTurk</span>  -->
+            </h3>
+            <p> 
+              Justine Kao, Greg Scontras, and I coded up a little interactive web text-visualization demo: <a href="https://github.com/desmond-ong/psychWidgets/tree/master/continuous_IOS">colorMeText</a>, which basically colors input text according to ratings using some dictionary (e.g. useful for sentiment analysis, or any other dimension of interest). It's still a work in progress! [ <a href="https://github.com/desmond-ong/colorMeText">git</a> ]
+            </p>
+            <hr>
+
+            <h3> 
+              Continuous version of the Inclusion of Other in Self (IOS) scale <span class='label label-mturk'>mTurk</span> 
+            </h3>
+            <p> 
+              <a href="https://github.com/desmond-ong/psychWidgets/tree/master/continuous_IOS">A simple Javascript implementation</a> (using Raphael.js) of a continuous version of the Inclusion of Other in Self scale (Aron, Aron, &amp; Smollan, 1982).
+            </p>
+            <hr>
+
+            <h3> 
+              Set Default Zoom in MS Word
+            </h3>
+            <p> 
+              Here's a simple Macro that you can use so that everytime (Microsoft) Word opens a new document, it does so at a specific zoom level. (I like 100% on my Retina Pro.). <br>
+
+              1) In Word, Go to Tools->Macro->Macros. <br>
+              2) On the dropbox after "Macros in", click <b>Normal (Global Template)</b> <br>
+              3) Create a new Macro called AutoOpen [This particular name seems to be required for it to be run upon opening]. <br>
+              4) Paste the following macro in, where 100 is the desired zoom percentage. <br>
+            </p>
+            <p>
+              <code>
+                Sub AutoOpen() <br> 
+                &nbsp; &nbsp;    ActiveWindow.ActivePane.View.Zoom.Percentage = 100 <br>
+                End Sub <br>
+              </code>
+            </p>
+            (refs: various places like <a href="https://www.youtube.com/watch?v=1HK_HrxUnKw">this</a> and <a href="http://wordribbon.tips.net/T011024_Automatically_Opening_a_Document_at_a_Specific_Zoom_Setting.html">this</a>.)
+            <hr>
+
+            <h3> 
+              One-line redaction of identifiable information <span class='label label-R'>R</span>
+            </h3>
+            <p> 
+              Simple one liner to replace identifiable information (e.g. mTurk workerids):
+            </p>
+            <p>
+              <code>d0$workerid <- match(d0$workerid, unique(sort(d0$workerid)))</code>
+            </p>
+            <hr>
+            <h3>
+              Compressing PDFs <span class='label label-mac'>Mac</span>
+            </h3>
+            <p>
+              There are probably better ways to do this (I spent maybe only 20 mins researching this problem because there was a journal with a pdf file size limit). 
+              <br>
+              I found that Mac's Preview can compress (Export->Quartz Filter->Reduce File Size), but images become really low quality. The solution I used was pdfcompress.com, which provided reasonable results (good enough for the journal submission, at least!)
+            </p>
+            <hr>
+            <h3>
+              Making GIFs  <span class='label label-mac'>Mac</span>
+            </h3>
+            <p>
+              Sometimes you gotta make gifs... maybe just for fun. I use GIFFun, which is pretty alright if you just need the basic essentials.
+              <br>
+              There's also a neat guide here that I haven't tried, using ImageMagick on the command line: <br> http://davidcsonka.com/blog/how-make-animated-gif-command-line-linux
+            </p>
+            <hr>
+            <h3> 
+              Data Munging: Concatenate many (e.g. .csv) files. <span class='label label-mac'>Mac</span>
+            </h3>
+            <p> 
+              Sometimes you just want to concatenate all the data files in a directory into one big file. If it's in a format like .csv, and you want to skip the first header, you can use the following command:
+            </p>
+            <p>
+              <code>awk 'FNR > 1' *.csv > combined_file.csv</code>
+            </p>
+            <hr>
+            <h3> 
+              Destructively crop pdfs (useful for LaTeX-ing) <span class='label label-latex'>LaTeX</span>
+            </h3>
+            <p> 
+              If you crop a pdf file in Preview, it doesn't destructively crop it. The parts you cropped out are still hidden in the file (i.e. so you can undo cropping). If you need to destructively crop the file (which I always have to do when prepping graphics for LaTeX), one way to do it is using Ghostscript. Let's say you want to crop "in.pdf" to "out.pdf" (and note that you can't use the same filename, because of the way gs works), at the command line, type: 
+            </p>
+            <p>
+              <code>gs -sDEVICE=pdfwrite -dUseCropBox -sOutputFile=out.pdf - < in.pdf</code>
+            </p>
+            <hr>
+            <h3> 
+              Convert Files to EPS (useful for LaTeX-ing) <span class='label label-latex'>LaTeX</span>
+            </h3>
+            <p> 
+              Reference: http://electron.mit.edu/~gsteele/pdf/ <br>
+              <blockquote>
+                [Postscript] Level 1 uses only ascii-coded RGB values, and is very wasteful, producing very large files. Level 2 includes support for JPEG encoded images, which produces much smaller files. Level 3 includes support for Zlib compression, making it well suited for making EPS files from png files.
+                <br><br>
+                In general, level 3 will produce the smallest files. Level 2 provides the best compatibility, and works well with jpeg images.
+                <br><br>
+                If you decide to use level 2 postscript, I recommend converting first to a jpg file. The "convert" program included Imagemagick uses a quality factor in "percent" that ranges from 0 to 100:
+                <br><br>
+                <code> convert -quality 80 fig.png fig.jpg </code>
+                <br><br>
+                I find a quality factor of 80 on high resolution images gives good compresssion without too much loss in quality. You can then to convert the image to eps using "convert" with the eps2 settings:
+                <br><br>
+                <code> convert fig.jpg eps2:fig.eps </code>
+                <br><br>
+                If you can use level 3 postscript, you can convert directly from png to eps: <br><br>
+                <code> convert fig.png eps3:fig.eps </code>
+                <br><br>
+                Using level 3 postscript from a png image file for scientific figures will often produce a very small eps file. Ghostscript is compatible with these level 3 eps files, so this is often a good way to go.
+              </blockquote>
+            </p>
+            <hr>
+            <h3> 
+              Drawing Bayes Nets with LaTeX <span class='label label-latex'>LaTeX</span>
+            </h3>
+            <p> 
+              A great package that I use to draw Bayes Nets is XY-pic.
+            </p>
+            <hr>
+            <h3> 
+              Increase Mouse Sensitivity on Mac OS X <span class='label label-mac'>Mac</span>
+            </h3>
+            <p> 
+              I love having really high sensitivity on my mouse/trackpad. Unfortunately, the maximum that you can go in System Preferences isn't high enough for me. There is a way to increase this sensitivity further. In Terminal, typing </p>
+              <p>
+              <code>defaults read -g com.apple.mouse.scaling</code>
+              </p>
+              <p>
+              will give you the current value of your mouse scaling. You can modify it by changing <code>read</code> to <code>write</code>, for example, if you want to set your mouse scaling to 3.0 (the maximum in System Preferences), type:
+              </p>
+              <p>
+              <code>defaults write -g com.apple.mouse.scaling 3.0</code>
+              </p>
+              <p>
+              In addition, to change the trackpad, use <code>com.apple.trackpad.scaling</code>. You can also use <code>.scrolling</code> to change scrolling speed.
+            </p>
+          </div>
+        </div>
+        <br>        
+
+        <div class="row-fluid">
+          <div class="span12">
+            
+          </div>
+        </div>
+        <br>
+
+        <div class="row-fluid">
+          <div class="span12">
+            
+          </div>
+        </div>
+        <br>
+        <div class="row-fluid">
+          <div class="span12">
+
+          </div>
+        </div>
+        <br>
+
+      </div>
+      <div class="push"></div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="muted credit"> created by Desmond C. Ong using Bootstrap. Layout last updated July 2013. </p>
+      </div>
+    </div>
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47712847-1', 'stanford.edu');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
