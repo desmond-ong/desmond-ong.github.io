@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /research/
+Disallow: /experiments/
+Disallow: /prosociality/
+Disallow: /photos/
+Disallow: /ArticleDB/
+Disallow: /private/
+Disallow: /images/
