@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Research and Publications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- my modifications -->
+    <link href="mycss.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    
+      <!-- Part 1: Wrap all page content here -->
+    <div class="wrap">
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="index.html">Desmond C. Ong</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="divider-vertical"></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="research.html">Research</a></li>
+                <li><a href="hacks.html">Hacks</a></li>
+                <li><a href="others.html">Others</a></li>
+                
+                <!--
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              -->
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Begin page content -->
+      <div class="container">
+
+        <!--
+        <div class="page-header">
+          <h1>Sticky footer with fixed navbar</h1>
+        </div>
+        <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
+        -->
+        <div class="row-fluid">
+          <div class="span12"> 
+            <p class="lead"> 
+              Speckle Characterization
+            </p>
+              <p class="muted">
+                with Sanjeev Solanki, Xinan Liang, and Xuewu Xu
+                <br>
+                June 2009 -- August 2009; July 2011 -- July 2012 <br>
+                Data Storage Institute, A*STAR Singapore
+              </p>
+            <p> 
+              Speckle results from coherent interference of laser light that causes fluctuations in intensity; this results in visual noise in laser display projections and holographic projections. The most popular method of speckle characterization, the speckle contrast (defined as the ratio of the standard deviation to the mean intensity) is an inherently pixel-centric method, and cannot pick up noise structures that result from local correlations, such as granularity and anisotropy, which is important for displayed images -- our eyes, in particular, are very sensitive to these local noise structures. As laser-based display technologies, such as laser TVs, laser projectors, and holographic display systems, are becoming more ubiquitous and part of the next generation of entertainment technologies, it is important to develop a more comprehensive method to evaluate speckle noise as well as speckle reduction technologies.
+            </p>
+            <br>
+            <center>
+            <img src="images/research_speckle.png" width="644" alt="Laser Speckle Characterization" />
+            </center>
+             <p class="text-center">
+              <small>Above, you can see an illustration of how speckle, and in particular, anisotropic speckle, degrades the aesthetic quality of displayed images. a) Input image that is fed into the display system. b) Displayed image with laser speckle noise, which could be an image that is displayed by a laser projector. In this case, it is a holographic projection. c) Speckled image in (b) with isotropic speckle reduction (i.e. the speckle noise is uniformly reduced in all directions, and so the remaining speckle is isotropic), d) Speckled image in (b) with anisotropic speckle reduction (i.e. the speckle noise is reduced more in some directions than others, and so the remaining speckle is anisotropic).
+              </small>
+            </p>
+              <br>
+            <p>
+              While at DSI, I developed a method of analyzing speckle based on the idea of the Power Spectral Density (PSD), a common metric used by many electrical engineers. Basically the PSD is equivalent to the squared of the Fourier Transform, and represents the power contained within the signal for each (spatial) frequency. 
+              </p><p>
+              Calculating the PSD in polar-coordinates allowed me to characterize speckle granularity (via the radial component of the polar PSD), as well as speckle anisotropy (via the angular component of the polar PSD). The sum of the PSD also gives a measure of the total speckle severity.
+              </p><p>
+              The method relies on the simple intuition that speckle is just high frequency intensity variations, and so would be easily picked up by a Fourier Transform. It's a beautifully simple, yet physically meaningful measure that allows the characterization of i) speckle severity, ii) granularity, and iii) speckle anisotropy, with the calculation of only one single function. For more information, check out our 2012 publication in Optical Engineering.
+           </p>
+
+             <br>
+             <p class="muted">Relevant Publications</p>
+             <p>
+              <b>Ong, D. C.</b>, Solanki, S., Liang, X., &amp; Xu, X. (2012). Analysis of laser speckle severity, granularity, and anisotropy using the power spectral density in polar-coordinate representation. <i>Opt. Eng.</i> <b>51</b>, 054301  
+                [<a href="pubs/2012_OE_Speckle.pdf">pdf</a>] 
+              </p>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="push"></div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="muted credit"> created by Desmond C. Ong using Bootstrap. Layout last updated July 2013. </p>
+      </div>
+    </div>
+
+
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47712847-1', 'stanford.edu');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
