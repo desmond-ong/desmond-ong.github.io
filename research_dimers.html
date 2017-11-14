@@ -1,74 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Research and Publications</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Desmond C. Ong">
+
+    <title>Research</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- my modifications -->
-    <link href="mycss.css" rel="stylesheet">
-
-
+    <link href="css/mycss.css" rel="stylesheet">
   </head>
-  <body>
-    
-      <!-- Part 1: Wrap all page content here -->
-    <div class="wrap">
 
-      <!-- Fixed navbar -->
-      <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="index.html">Desmond C. Ong</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="divider-vertical"></li>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="research.html">Research</a></li>
-                <li><a href="hacks.html">Hacks</a></li>
-                <li><a href="others.html">Others</a></li>
-                
-                <!--
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              -->
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </div>
-      </div>
+  <body>
+
+    <!-- Top Navigation Bar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Desmond C. Ong</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <!-- <ul class="navbar-nav ml-auto"> -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="research.html">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publications.html">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="others.html">Others</a>
+            </li>
+          </ul>
+        </div> <!-- End of div class="collapse navbar-collapse" -->
+      </div> <!-- End of div class="container" -->
+    </nav> <!-- End of Navigation Bar -->
 
       <!-- Begin page content -->
       <div class="container">
-
-        <!--
-        <div class="page-header">
-          <h1>Sticky footer with fixed navbar</h1>
-        </div>
-        <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
-        -->
-        <div class="row-fluid">
+        <div class="row">
           <div class="span12"> 
-            <p class="lead"> 
+            <h2 class="my-3">
               Vacancy and dislocation dynamics in colloidal dimer crystals
-            </p>
-              <p class="muted">
+            </h2>
+              <p class="text-muted">
                 with Sharon Gerbode and Itai Cohen, and in collaboration with Chekesha Liddell-Watson, Umang Argawal, and Fernando Escobedo.
                 <br>
                 August 2008 -- August 2010 <br>
@@ -80,7 +64,7 @@
               Using fluorescent confocal microscopy, I examined how adding geometric restrictions to a crystal of spheres, in the form of "bonds" between the spheres (i.e. having dimers instead of monomer spheres), changes the dynamics of both dislocations and vacancies. 
             </p>
 
-            <center><img src="images/research_dimers/research_dimers_crystal.png" width=30% /> <img src="images/research_dimers/research_dimers_overlaid.png" width=15%/></center>
+            <center><img src="img/research_dimers/research_dimers_crystal.png" width=30% /> <img src="img/research_dimers/research_dimers_overlaid.png" width=15%/></center>
             <p class="text-center">
               <small>Left: An example of one of the beautiful dimer crystal that we studied. (The observant would notice that there are "mutant" particles, generated during the growth process.). 
               <br>
@@ -97,7 +81,7 @@
 
 
 
-            <center><img src="images/research_dimers/research_dimers_illustration1.png" width=15%/><img src="images/research_dimers/research_dimers_illustration2.png" width=15%/><img src="images/research_dimers/research_dimers_illustration3.png" width=15%/></center>
+            <center><img src="img/research_dimers/research_dimers_illustration1.png" width=15%/><img src="img/research_dimers/research_dimers_illustration2.png" width=15%/><img src="img/research_dimers/research_dimers_illustration3.png" width=15%/></center>
             <p class="text-center">
               <small> An illustration of how the bonds in a dimer crystal restrict dislocations. Left: Imagine that the crystal was to be sheared along the axis shown. The dimers in green would just slide along with the shear, and the dimers in blue would "rotate"; however the bonds of the dimers in red would have to be broken. This is shown in the Middle image. Right: However, in a crystal of spheres, dislocation happens easily along any of the axes of the crystal.
               </small>
@@ -108,13 +92,13 @@
               We measured this experimentally using home-built "rampcells" (see diagram below). The rampcell allowed us to assemble monolayer crystals -- particles that crystallize only in 2D -- where the gap between the microscope slides became on the order of 1 particle diameter. We injected the colloidal suspension (particles suspended in liquid) from the top, and allowed them to slowly settle and self-organize into crystals. In order to experimentally induce dislocations and study the relaxation response of the crystal, we added small spherical "intruder" particles into the colloidal suspension. These spherical intruders which were the same size as the lobes of the dimers, but were of a different optical density. This allows them to be manipulated by optical tweezers. We used a home-built Holographic Optical Tweezer setup to drag these intruder particle through the crystals, and observed the relaxation response.
             </p>
 
-            <center><img src="images/research_dimers/rampcellDiagram.jpg" width=50% /></center>
+            <center><img src="img/research_dimers/rampcellDiagram.jpg" width=50% /></center>
             <p class="text-center">
               <small> An example of the "rampcell" that we designed and used. The cell consists of two microscope slides that are bonded at one end (the right end), and are separated by cured UV glue spacers on the left. The left-most row of spacers are have larger than the middle row. This creates a cell whose depth (spacing between the slides) decreases as one goes from left to right. Thus, as we move from left to right, we would reach a region where only one layer of particles can fit. We perform our analyses on this monolayer region.
               </small>
             </p><br><br>
 
-            <center><img src="images/research_dimers/research_dimers_illustration4.png" width=35%/></center>
+            <center><img src="img/research_dimers/research_dimers_illustration4.png" width=35%/></center>
             <p class="text-center">
               <small> An example of dragging a particle through a crystal of spheres (left) and a crystal of dimers (right). 
               </small>
@@ -131,7 +115,7 @@
               As an extension to this work, we next studied mixed crystals of spheres and dimers. On one extreme (100% spheres), we get high defect mobility (earlier, we focused on studying dislocations). At low concentrations, the distribution of dimer bonds would not be enough to reduce the mobility of defects within the crystal. However, at really high dimer concentrations (up to 100% as studied above), we see a heavily restricted defect mobility. The aim of this extension was to study defects: specifically vacancies and vacancy-mediation dislocation dynamics, as a function of dimer concentration in these mixed crystals.
             </p>
 
-            <center><img src="images/research_dimers/research_dimers_mixed_01.jpg" width=40%/> &nbsp; <img src="images/research_dimers/research_dimers_mixed_02.jpg" width=40% /></center>
+            <center><img src="img/research_dimers/research_dimers_mixed_01.jpg" width=40%/> &nbsp; <img src="img/research_dimers/research_dimers_mixed_02.jpg" width=40% /></center>
             <p class="text-center">
               <small>Two examples of mixed sphere-dimer crystals. The bright spheres are intruder particles.
               </small>
@@ -139,7 +123,7 @@
 
             <center>
             <video width="640" height="480" controls>
-            <source src="images/research_dimers/research_dimers_fewPnuts2.mp4" type="video/mp4">
+            <source src="img/research_dimers/research_dimers_fewPnuts2.mp4" type="video/mp4">
             </video></center>
             <p class="text-center">
               <small>An example of an experiment in a low-dimer concentration region. Watch how the intruder is dragged through the crystal, and how the crystal relaxes.
@@ -157,7 +141,7 @@
 
 
              <br>
-            <p class="muted">Relevant Publications</p>
+            <p class="text-muted">Relevant Publications</p>
              <p>
               Gerbode, S. J., <b>Ong, D. C.</b>, Liddell, C. M., &amp; Cohen, I. (2010). Dislocations and vacancies in two-dimensional mixed crystals of spheres and dimers. <i>Phys. Rev. E</i> <b>82</b>, 041404 
                 [<a href="pubs/2010_PRE_Vacancy_Diffusion.pdf">pdf</a>]
@@ -173,21 +157,19 @@
       </div>
 
 
-      <div class="push"></div>
     </div>
 
-    <div class="footer">
+
+    <footer class="py-3 bg-light">
       <div class="container">
-        <p class="muted credit"> created by Desmond C. Ong using Bootstrap. Layout last updated July 2013. </p>
+        <p class="m-0 text-muted"> created by Desmond C. Ong using Bootstrap. Layout last updated November 2017. </p>
       </div>
-    </div>
+    </footer>
 
-
-
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -199,4 +181,5 @@
     </script>
 
   </body>
+
 </html>
