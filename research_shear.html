@@ -1,74 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Research and Publications</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Desmond C. Ong">
+
+    <title>Research</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- my modifications -->
-    <link href="mycss.css" rel="stylesheet">
-
-
+    <link href="css/mycss.css" rel="stylesheet">
   </head>
-  <body>
-    
-      <!-- Part 1: Wrap all page content here -->
-    <div class="wrap">
 
-      <!-- Fixed navbar -->
-      <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="index.html">Desmond C. Ong</a>
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="divider-vertical"></li>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="research.html">Research</a></li>
-                <li><a href="hacks.html">Hacks</a></li>
-                <li><a href="others.html">Others</a></li>
-                
-                <!--
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              -->
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </div>
-      </div>
+  <body>
+
+    <!-- Top Navigation Bar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Desmond C. Ong</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <!-- <ul class="navbar-nav ml-auto"> -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="research.html">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="publications.html">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="others.html">Others</a>
+            </li>
+          </ul>
+        </div> <!-- End of div class="collapse navbar-collapse" -->
+      </div> <!-- End of div class="container" -->
+    </nav> <!-- End of Navigation Bar -->
 
       <!-- Begin page content -->
       <div class="container">
-
-        <!--
-        <div class="page-header">
-          <h1>Sticky footer with fixed navbar</h1>
-        </div>
-        <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the <code>.container</code>.</p>
-        -->
-        <div class="row-fluid">
+        <div class="row">
           <div class="span12"> 
-            <p class="lead"> 
+            <h2 class="my-3"> 
               Enhanced Brownian diffusion of colloidal dimers in an oscillatory shear flow
-            </p>
-              <p class="muted">
+            </h2>
+              <p class="text-muted">
                 with Brian Leahy, Xiang Cheng, and Itai Cohen
                 <br>
                 August 2010 -- June 2011 <br>
@@ -79,7 +63,7 @@
               In the final year of my undergraduate studies, I was studying how anisotropic particles move under shear, with graduate student Brian Leahy, then-post-doc Xiang Cheng (now a faculty member at Minnesota) and Professor Itai Cohen.
             </p>
 
-            <center><img src="images/research_sheartumblingmovie.gif" /></center>
+            <center><img src="img/research_sheartumblingmovie.gif" /></center>
             <p class="text-center">
               <small>Short example video of the types of shear experiments we conducted. Notice how, in addition to the translational oscillation (back and forth movement), the "peanut"-shaped particle also rotates into and out of the plane; this is an example of rotational diffusion.
               </small>
@@ -92,13 +76,13 @@
             </p>
             <br><br>
 
-            <center><img src="images/research_sheartumblingSchematic.png" width=50% /></center>
+            <center><img src="img/research_sheartumblingSchematic.png" width=50% /></center>
             <br>
             <br>
             <p>
               <b>Particle Tracking and Data Analysis</b>. We faced some interesting challenges in our data analysis. Confocal microscopy allowed us to get many horizontal (x-y) images that are separated by a small vertical distance (z), and allows us to take many pictures in time (t), resulting in a 4D dataset. (The example movie above is just one slice, in time). From this, we had to be able to extract the position and the orientation of the particle at every point in time. Our method is illustrated in the following figure. At each time point, we have a 3D (x,y,z) collection of points -- the position of the (center of mass of the) particle is easily determined by taking the centroid (average) of all the points. To determine the orientation, we ran Principal Component Analysis on the data, which gave us a vector pointing along the direction which maximizes the variance explained (i.e. the Principal Component); in our particle this corresponds to the major axis of our dimer.
             </p><br><br>
-            <center><img src="images/research_sheartumblingPCA.png" width=50% /></center>
+            <center><img src="img/research_sheartumblingPCA.png" width=50% /></center>
             <p class="text-center">
               <small> The method of particle tracking that we developed. Top left: Confocal microscopy allows us to get many x-y snapshots, displaced by a small vertical (z) distance. This is called a "z-stack". Top right: From the "z-stack", we can threshold the images to get the 3D coordinates of the pixels that correspond to the particle. Bottom Right: Visualizing the points. Bottom left: Using Principal Component Analysis to determine the orientation of the particle in 3D.
               </small>
@@ -110,7 +94,7 @@
            <p> <i> More information can be found on my old lab website, <a href="http://cohengroup.ccmr.cornell.edu/research.php?project=10018">here</a>. </i> Or check out our 2013 publication in Physical Review Letters.</p>
 
              <br>
-            <p class="muted">Relevant Publications</p>
+            <p class="text-muted">Relevant Publications</p>
              <p>
              Leahy, B. D., Cheng, X., <b>Ong, D. C.</b>, Liddell-Watson, C., &amp; Cohen, I. (2013) Enhancing rotational diffusion using oscillatory shear.  <i>Phys. Rev. Lett.</i> <b>110</b>, 228301
                 [<a href="pubs/2013_PRL_Shear_Diffusion.pdf">pdf</a>] 
@@ -121,21 +105,19 @@
 
       </div>
 
-      <div class="push"></div>
     </div>
 
-    <div class="footer">
+
+    <footer class="py-3 bg-light">
       <div class="container">
-        <p class="muted credit"> created by Desmond C. Ong using Bootstrap. Layout last updated July 2013. </p>
+        <p class="m-0 text-muted"> created by Desmond C. Ong using Bootstrap. Layout last updated November 2017. </p>
       </div>
-    </div>
+    </footer>
 
-
-
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -147,4 +129,5 @@
     </script>
 
   </body>
+
 </html>
