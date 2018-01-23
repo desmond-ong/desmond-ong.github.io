@@ -48,7 +48,7 @@
       <!-- Begin page content -->
       <div class="container">
         <div class="row">
-          <div class="span12"> 
+          <div class="col-xs-9 mx-3"> 
             <h2 class="my-3">
               Speckle Characterization
             </h2>
@@ -62,13 +62,17 @@
               Speckle results from coherent interference of laser light that causes fluctuations in intensity; this results in visual noise in laser display projections and holographic projections. The most popular method of speckle characterization, the speckle contrast (defined as the ratio of the standard deviation to the mean intensity) is an inherently pixel-centric method, and cannot pick up noise structures that result from local correlations, such as granularity and anisotropy, which is important for displayed images -- our eyes, in particular, are very sensitive to these local noise structures. As laser-based display technologies, such as laser TVs, laser projectors, and holographic display systems, are becoming more ubiquitous and part of the next generation of entertainment technologies, it is important to develop a more comprehensive method to evaluate speckle noise as well as speckle reduction technologies.
             </p>
             <br>
-            <center>
-            <img src="img/research_speckle.png" width="644" alt="Laser Speckle Characterization" />
-            </center>
+            <div class="text-center">
+              <center>
+                 <div style="max-width:644px">
+                  <img class="img-fluid" src="img/research_speckle.png" alt="Laser Speckle Characterization" />
+                  </div>
+              </center>
              <p class="text-center">
               <small>Above, you can see an illustration of how speckle, and in particular, anisotropic speckle, degrades the aesthetic quality of displayed images. a) Input image that is fed into the display system. b) Displayed image with laser speckle noise, which could be an image that is displayed by a laser projector. In this case, it is a holographic projection. c) Speckled image in (b) with isotropic speckle reduction (i.e. the speckle noise is uniformly reduced in all directions, and so the remaining speckle is isotropic), d) Speckled image in (b) with anisotropic speckle reduction (i.e. the speckle noise is reduced more in some directions than others, and so the remaining speckle is anisotropic).
               </small>
             </p>
+            </div>
               <br>
             <p>
               While at DSI, I developed a method of analyzing speckle based on the idea of the Power Spectral Density (PSD), a common metric used by many electrical engineers. Basically the PSD is equivalent to the squared of the Fourier Transform, and represents the power contained within the signal for each (spatial) frequency. 
