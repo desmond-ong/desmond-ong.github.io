@@ -63,11 +63,18 @@
               In the final year of my undergraduate studies, I was studying how anisotropic particles move under shear, with graduate student Brian Leahy, then-post-doc Xiang Cheng (now a faculty member at Minnesota) and Professor Itai Cohen.
             </p>
 
-            <center><img src="img/research_sheartumblingmovie.gif" /></center>
-            <p class="text-center">
-              <small>Short example video of the types of shear experiments we conducted. Notice how, in addition to the translational oscillation (back and forth movement), the "peanut"-shaped particle also rotates into and out of the plane; this is an example of rotational diffusion.
-              </small>
-            </p><br><br>
+            <div class="text-center">
+              <center>
+                <div style="max-width:800px"> <!-- this doesn't seem to do anything to gif -->
+                  <img class="img-fluid" src="img/research_sheartumblingmovie.gif" />
+                </div>
+              </center>
+              <p class="text-center">
+                <small>Short example video of the types of shear experiments we conducted. Notice how, in addition to the translational oscillation (back and forth movement), the "peanut"-shaped particle also rotates into and out of the plane; this is an example of rotational diffusion.
+                </small>
+              </p>
+            </div>
+            <br><br>
 
             <p>
               When a non-spherical particle is under shear (for example, in the example video above), it will tend to rotate as well as translate, and the rotation would then interact with its translational movement as well and enhance its translational diffusion. This phenomenon, called Taylor dispersion, has been well studied in aspherical particles. We were interested in studying Taylor disperson and shear-enhanced diffusion in symmetric dimer ("peanut"-shaped) particles.
@@ -76,17 +83,31 @@
             </p>
             <br><br>
 
-            <center><img src="img/research_sheartumblingSchematic.png" width=50% /></center>
+            <div class="text-center">
+              <center>
+                <div style="max-width:400px">
+                  <img class="img-fluid" src="img/research_sheartumblingSchematic.png" />
+                </div>
+              </center>
+            </div>
+            
             <br>
             <br>
             <p>
               <b>Particle Tracking and Data Analysis</b>. We faced some interesting challenges in our data analysis. Confocal microscopy allowed us to get many horizontal (x-y) images that are separated by a small vertical distance (z), and allows us to take many pictures in time (t), resulting in a 4D dataset. (The example movie above is just one slice, in time). From this, we had to be able to extract the position and the orientation of the particle at every point in time. Our method is illustrated in the following figure. At each time point, we have a 3D (x,y,z) collection of points -- the position of the (center of mass of the) particle is easily determined by taking the centroid (average) of all the points. To determine the orientation, we ran Principal Component Analysis on the data, which gave us a vector pointing along the direction which maximizes the variance explained (i.e. the Principal Component); in our particle this corresponds to the major axis of our dimer.
             </p><br><br>
-            <center><img src="img/research_sheartumblingPCA.png" width=50% /></center>
-            <p class="text-center">
-              <small> The method of particle tracking that we developed. Top left: Confocal microscopy allows us to get many x-y snapshots, displaced by a small vertical (z) distance. This is called a "z-stack". Top right: From the "z-stack", we can threshold the images to get the 3D coordinates of the pixels that correspond to the particle. Bottom Right: Visualizing the points. Bottom left: Using Principal Component Analysis to determine the orientation of the particle in 3D.
-              </small>
-            </p>
+            
+            <div class="text-center">
+              <center>
+                <div style="max-width:600px">
+                  <img class="img-fluid" src="img/research_sheartumblingPCA.png" />
+                </div>
+              </center>
+              <p class="text-center">
+                <small> The method of particle tracking that we developed. Top left: Confocal microscopy allows us to get many x-y snapshots, displaced by a small vertical (z) distance. This is called a "z-stack". Top right: From the "z-stack", we can threshold the images to get the 3D coordinates of the pixels that correspond to the particle. Bottom Right: Visualizing the points. Bottom left: Using Principal Component Analysis to determine the orientation of the particle in 3D.
+                </small>
+              </p>
+            </div>
             <br><br><br>
             <p>
                We find that both the rotational and translational diffusivities are enhanced to different extents based on factors such as the strain and particle aspect ratio, suggesting a way to tune the diffusivities relative to each other, opening the way to a host of exciting applications in particle rheology, drug delivery, etc.
