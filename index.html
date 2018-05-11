@@ -172,12 +172,11 @@
 
     <!-- <div class="push"></div> -->
 
-    <footer class="py-3 bg-light push-to-bottom">
+    <footer class="py-3 bg-light" id="page-footer">
       <div class="container">
         <p class="m-0 text-muted"> created by Desmond C. Ong using Bootstrap. Layout last updated November 2017. </p>
       </div>
     </footer>
-
 
 
     <!-- Bootstrap core JavaScript -->
@@ -193,6 +192,38 @@
       ga('send', 'pageview');
 
     </script>
+
+    <!-- script just to resize this footer -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        adjustFooterPosition();
+        $(window).resize(function () {
+          adjustFooterPosition();
+        });
+      });
+
+      var originalFooterBottom = 0;
+
+      function adjustFooterPosition() {
+
+        if (originalFooterBottom == 0) {
+          originalFooterBottom = $("#page-footer").position()['top'] + $("#page-footer").height();
+        }
+
+        if ($(window).height() > originalFooterBottom) {
+          if (!($("#page-footer")[0].classList.contains('push-to-bottom'))) {
+            $("#page-footer")[0].classList.add('push-to-bottom');
+          }
+        }
+        else {
+          if ($("#page-footer")[0].classList.contains('push-to-bottom')) {
+            $("#page-footer")[0].classList.remove('push-to-bottom');
+          }
+        }
+
+      }
+    </script>
+
 
   </body>
 
