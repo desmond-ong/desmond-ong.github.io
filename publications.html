@@ -1,158 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Personal Website">
-    <meta name="author" content="Desmond C. Ong">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Personal Website">
+  <meta name="author" content="Desmond C. Ong">
 
-    <title>Publications</title>
+  <title>Publications</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- my modifications -->
-    <link href="css/mycss.css" rel="stylesheet">
-  </head>
+  <!-- my modifications -->
+  <link href="css/mycss.css" rel="stylesheet">
+</head>
 
-  <body>
+<body>
 
-    <!-- Top Navigation Bar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Desmond C. Ong</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <!-- <ul class="navbar-nav ml-auto"> -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="research.html">Research</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="publications.html">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="others.html">Others</a>
-            </li>
-          </ul>
-        </div> <!-- End of div class="collapse navbar-collapse" -->
-      </div> <!-- End of div class="container" -->
-    </nav> <!-- End of Navigation Bar -->
-
-    <!-- Begin Page Content -->
+  <!-- Top Navigation Bar -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
+      <a class="navbar-brand" href="index.html">Desmond C. Ong</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- <ul class="navbar-nav ml-auto"> -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="others.html">Others</a>
+          </li>
+        </ul>
+      </div> <!-- End of div class="collapse navbar-collapse" -->
+    </div> <!-- End of div class="container" -->
+  </nav> <!-- End of Navigation Bar -->
 
-      <!-- <div class="row"> -->
+  <!-- Begin Page Content -->
+  <div class="container">
+
+    <!-- <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Link with href
+    </a> -->
+    <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      All Publications
+    </button> -->
+    <!-- <button class="btn btn-primary my-btn" type="button" data-toggle="collapse" data-target=".collapse-pub-all, .collapse-pub-headers" aria-expanded="false" aria-controls="
+    ">
+      Toggle All Publications
+    </button>
+
+    <button id="button-psych" class="btn btn-primary my-btn" type="button" data-toggle="collapse" data-target=".collapse-pub-psych, .collapse-pub-headers" aria-expanded="false" aria-controls="pub-asaba2019devPsych">
+      Toggle Psychology Publications
+    </button>
+
+    <button class="btn btn-primary my-btn" type="button" data-toggle="collapse" data-target=".collapse-pub-CS, .collapse-pub-headers" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle CS Publications</button>
+
+    <button class="btn btn-primary my-btn" type="button" data-toggle="collapse" data-target=".collapse-pub-others, .collapse-pub-headers" aria-expanded="false" aria-controls="pub">Toggle Other Publications</button>
+
+    </p>
+    <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      X
+    </div>
+    </div> -->
+
+    <div class="row">
+      <div class="col">
+        <button id="button-all" class="btn btn-primary btn-lg my-btn" type="button">
+          Show All Publications
+        </button>
+        <br>
+      </div>
+      <div class="col">
+        <!-- <button id="button-psych" class="btn btn-info btn-sm my-btn" type="button" data-toggle="button"> -->
+        <button id="button-psych" class="btn btn-info btn-sm my-btn" type="button">
+          <!-- Hide Psychology Publications -->
+          Show Only Psychology Publications
+        </button>
+        <br>
+        <!-- <button id="button-CS" class="btn btn-info btn-sm my-btn" type="button" data-toggle="button"> -->
+        <button id="button-CS" class="btn btn-info btn-sm my-btn" type="button">
+          <!-- Hide Computer Science Publications -->
+          Show Only Computer Science Publications
+        </button>
+        <br>
+        <!-- <button id="button-otherPubs" class="btn btn-info btn-sm my-btn" type="button" data-toggle="button"> -->
+          <button id="button-otherPubs" class="btn btn-info btn-sm my-btn" type="button">
+            <!-- Hide Other Publications -->
+            Show Only Publications in Other Fields
+          </button>
+      </div>
+      <!-- I've coded up the Senior-Authored buttons; will let them go live when I have more senior authored  -->
+      <div class="col">
+        <button id="button-representative" class="btn btn-warning btn-sm my-btn" type="button">
+          Show Most-Representative Publications
+        </button>
+        <button id="button-firstAuthored" class="btn btn-warning btn-sm my-btn" type="button">
+          Show Only First-Authored Publications
+        </button>
+        <!-- <button id="button-seniorAuthored" class="btn btn-warning btn-sm my-btn" type="button">
+          Show Only Senior-Authored Publications
+        </button> -->
+      </div> <!-- div col -->
+    </div> <!-- div row -->
+    <div class="row">
+      <h3>
+
+      </h3>
+    </div>
+
+    <div class="row">
+      <div class="col">
         <!-- Page Heading -->
         <h2 class="my-3">
           Publications
+          <span id="pub-display-status-span" class="badge badge-success">
+            Currently showing all publications
+          </span>
         </h2>
 
-        <div class="publicationList-underReview-Div">
-          <h4> Manuscripts and Under Review </h4>
-          <ul>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Wu, Z., Tan, Z.-X., Reddan, M., Kahhale, I., Mattek, A., &amp; Zaki, J. (under review). Modeling emotion understanding in complex narratives over time.
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Zaki, J., &amp; Perry, A. (under review). Mu rhythm suppression over sensorimotor regions is associated with greater empathic accuracy. https://psyarxiv.com/ds9c3/
-              </p>
-            </li>
-          </ul>
-        </div>
 
-        <div class="publicationListDiv">
-          <h4> Accepted/Published </h4>
+
+        <div id="publicationList-underReview-Div">
+          <!-- <div class="collapse collapse-pub-headers" id="pub-header-under-review"> -->
+          <div id="pub-header-under-review">
+            <h4> Manuscripts and Under Review </h4>
+          </div>
+          <ul>
+            <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative" id="pub-ongTimeSeries">
+              <div class="my-card">
+                <li>
+                  <p class="hangingindent">
+                    <b>Ong, D. C.</b>, Wu, Z., Tan, Z.-X., Reddan, M., Kahhale, I., Mattek, A., &amp; Zaki, J. (under review). Modeling emotion understanding in complex narratives over time.
+                  </p>
+                </li>
+              </div>
+            </div>
+            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ongEEG">
+              <div class="my-card">
+                <li>
+                  <p class="hangingindent">
+                    <b>Ong, D. C.</b>, Zaki, J., &amp; Perry, A. (under review). Mu rhythm suppression over sensorimotor regions is associated with greater empathic accuracy. https://psyarxiv.com/ds9c3/
+                  </p>
+                </li>
+              </div>
+            </div>
+          </ul>
+        </div> <!-- div publicationList-underReview-Div -->
+
+
+        <div id="publicationListDiv">
+          <!-- <div class="collapse collapse-pub-headers" id="pub-header-accept"> -->
+          <div id="pub-header-accept">
+            <h4> Accepted/Published </h4>
+          </div>
           <ol reversed>
-            <li>
-              <p class="hangingindent">
-                Asaba, M.*, <b>Ong, D. C.</b>*, &amp; Gweon, H. (in press). Integrating expectations and outcomes: Preschoolers' developing ability to reason about others' emotions. <i>Developmental Psychology</i>
-                <br>
-                * equal contribution
-              </p> <p class="hangingindent-supplemental">
-                <!-- <br> -->
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-asaba2019devPsych">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Asaba, M.*, <b>Ong, D. C.</b>*, &amp; Gweon, H. (in press). Integrating expectations and outcomes: Preschoolers' developing ability to reason about others' emotions. <i>Developmental Psychology</i>
+                  <br>
+                  * equal contribution
+                </p> <p class="hangingindent-supplemental">
+                  <!-- <br> -->
                   <!-- [<a href="research_XXX.html">
                     summary
                   </a>]
-                <br> -->
-                <!-- [ --><!-- <a href="pubs/XXX.pdf"> -->
+                  <br> -->
+                  <!-- [ --><!-- <a href="pubs/XXX.pdf"> -->
                     <!-- pre-print -->
                   <!-- </a> --> <!-- ] -->
-                <!--   [<a href="http://XXX">
+                  <!--   [<a href="http://XXX">
                     journal website
                   </a>] -->
-                [<a href="https://psyarxiv.com/782uq/">
+                  [<a href="https://psyarxiv.com/782uq/">
                     PsyArXiv pre-print
                   </a>]
-                [<a href="https://osf.io/wakbu/">
+                  [<a href="https://osf.io/wakbu/">
                     repository
                   </a>]
-                
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Soh, H., Zaki, J., &amp; Goodman, N. D. (in press). Applying Probabilistic Programming to Affective Computing. <i>IEEE Transactions on Affective Computing</i>
-              </p> <p class="hangingindent-supplemental">
-                <!-- <br> -->
+                </p>
+              </li>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative" id="pub-ong2019probprog">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b>, Soh, H., Zaki, J., &amp; Goodman, N. D. (in press). Applying Probabilistic Programming to Affective Computing. <i>IEEE Transactions on Affective Computing</i>
+                </p> <p class="hangingindent-supplemental">
+                  <!-- <br> -->
                   <!-- [<a href="research_XXX.html">
                     summary
                   </a>]
-                <br> -->
-                [<a href="pubs/2019_TAC_probprog.pdf">
+                  <br> -->
+                  [<a href="pubs/2019_TAC_probprog.pdf">
                     pre-print
                   </a>]
-                <!--   [<a href="http://XXX">
+                  [<a href="https://arxiv.org/abs/1903.06445"> arXiv </a>]
+                  <!--   [<a href="http://XXX">
                     journal website
                   </a>] -->
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                Tan, Z. X.*, Goel, A.*, Nguyen, T.-S.*, &amp; <b>Ong, D. C.</b> (2019). A Multimodal LSTM for Predicting Listener Empathic Responses over time. <i>To be presented at the OMG-Empathy Challenge workshop at the 14th IEEE International Conference on Automatic Face and Gesture Recognition (FG) 2019.</i>
-                <br>
-                * equal contribution
-              </p><p class="hangingindent-supplemental">
-                [<a href="https://arxiv.org/abs/1812.04891"> arXiv </a>]
-              </p>
-            </li>
+                </p>
+              </li>
+            </div>
+          </div>
 
-            <li>
-              <p class="hangingindent">
-                Xie, Y., Bodala, I. P., <b>Ong, D. C.</b>, Hsu, D., &amp; Soh, H. (2019). Robot Capability and Intention in Trust-based Decisions across Tasks. <i>Human-Robot Interaction (HRI) 2019</i>.
-              </p><p class="hangingindent-supplemental">
-                <!-- <br> -->
+
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor" id="pub-tan2019OMGempathy">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Tan, Z. X.*, Goel, A.*, Nguyen, T.-S.*, &amp; <b>Ong, D. C.</b> (2019). A Multimodal LSTM for Predicting Listener Empathic Responses over time. <i>To be presented at the OMG-Empathy Challenge workshop at the 14th IEEE International Conference on Automatic Face and Gesture Recognition (FG) 2019.</i>
+                  <br>
+                  * equal contribution
+                </p><p class="hangingindent-supplemental">
+                  [<a href="https://arxiv.org/abs/1812.04891"> arXiv </a>]
+                </p>
+              </li>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-pub-all collapse-pub-CS" id="pub-xie2019hri">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Xie, Y., Bodala, I. P., <b>Ong, D. C.</b>, Hsu, D., &amp; Soh, H. (2019). Robot Capability and Intention in Trust-based Decisions across Tasks. <i>Human-Robot Interaction (HRI) 2019</i>.
+                </p><p class="hangingindent-supplemental">
+                  <!-- <br> -->
                   <!-- [<a href="research_XXX.html">
                     summary
                   </a>]
-                <br> -->
-                [<a href="pubs/2019_HRI_TrustCapabilityIntent.pdf">
+                  <br> -->
+                  [<a href="pubs/2019_HRI_TrustCapabilityIntent.pdf">
                     pdf
-                </a>]
-                <!--   [<a href="http://XXX">
+                  </a>]
+                  <!--   [<a href="http://XXX">
                     journal website
                   </a>] -->
-              </p>
-            </li>
+                </p>
+              </li>
+            </div>
+          </div>
 
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Zaki, J., &amp; Goodman, N. D. (in press). Computational models of emotion inference in Theory of Mind: A review and roadmap. <i>Topics in Cognitive Science</i>.
-              </p><p class="hangingindent-supplemental">
-                <!-- <br> -->
+
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative" id="pub-ong2019topiCS">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b>, Zaki, J., &amp; Goodman, N. D. (in press). Computational models of emotion inference in Theory of Mind: A review and roadmap. <i>Topics in Cognitive Science</i>.
+                </p><p class="hangingindent-supplemental">
+                  <!-- <br> -->
                   <!-- [<a href="research_XXX.html">
                     summary
                   </a>]
-                <br> -->
+                  <br> -->
                   <!-- [ pdf ]  -->
                   [<a href="pubs/2018_topiCS_affCog_inPress.pdf">
                     pre-journal-formatted version
@@ -160,18 +276,23 @@
                   [<a href="http://dx.doi.org/10.1111/tops.12371">
                     journal website
                   </a>]
-              </p>
-            </li>
+                </p>
+              </li>
+            </div>
+          </div>
 
-            <li>
-              <p class="hangingindent">
-                Williams, W. C., Morelli, S. A., <b>Ong, D. C.</b>, &amp; Zaki, J. (2018). Interpersonal emotion regulation: Implications for affiliation, perceived support, relationships, and well-being. <i>Journal of Personality and Social Psychology</i>, 115(2), 224-254.
-              </p><p class="hangingindent-supplemental">
-                <!-- <br> -->
+
+          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-williamsJPSP">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Williams, W. C., Morelli, S. A., <b>Ong, D. C.</b>, &amp; Zaki, J. (2018). Interpersonal emotion regulation: Implications for affiliation, perceived support, relationships, and well-being. <i>Journal of Personality and Social Psychology</i>, 115(2), 224-254.
+                </p><p class="hangingindent-supplemental">
+                  <!-- <br> -->
                   <!-- [<a href="research_XXX.html">
                     summary
                   </a>]
-                <br> -->
+                  <br> -->
                   <!-- [ pdf ]  -->
                   [<a href="pubs/2018_JPSP_IRQ_inpress.pdf">
                     pre-journal-formatted version
@@ -185,74 +306,87 @@
                   [<a href="http://dx.doi.org/10.1037/pspi0000132">
                     journal website
                   </a>]
-              </p>
-            </li>
+                </p>
+              </li>
+            </div>
+          </div>
 
 
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Goodman, N. D., &amp; Zaki, J. (2018). Happier than thou? A self-enhancement bias in emotion attribution. <i>Emotion</i>, 18(1), 116-126.
-              </p><p class="hangingindent-supplemental">
-                [<a href="pubs/2017_Emotion_PsychDistance_inPress.pdf">
-                  pre-journal-formatted version
-                </a>]
-                <!--[<a href="https://github.com/desmond-ong/emotionPsychDistance/"> -->
-                [<a href="http://desmond-ong.github.io/emotionPsychDistance/">
-                  supporting data and materials
-                </a>]
-                [<a href="http://psycnet.apa.org/psycinfo/2017-16353-001/">
-                  journal website
-                </a>]
-              </p>
-            </li>
-
-
-            <li>
-              <p class="hangingindent">
-                Morelli, S. A., <b>Ong, D. C.</b>, Makati, R., Jackson, M. O., &amp; Zaki, J. (2017). Empathy and well-being correlate with centrality in different social networks.  <i>Proceedings of the National Academy of Sciences</i>, 114(37), 9843-9847.
-              </p><p class="hangingindent-supplemental">
-                [<a href="pubs/2017_PNAS_Morelli_EmpathySocialNetworks.pdf">
-                  pdf
-                </a>]
-                [<a href="pubs/2017_PNAS_Morelli_Supplemental.pdf">
-                  supplemental materials
-                </a>]
-                [<a href="https://doi.org/10.5281/zenodo.821788">
-                  supporting data and materials
-                </a>]
-                [<a href="http://www.pnas.org/content/114/37/9843.abstract">
-                  journal website
-                </a>]
-                <br>
-                [<a href="https://www.washingtonpost.com/national/health-science/we-have-friends-on-facebook-and-everywhere-else-but-are-they-the-kind-we-need/2017/11/24/c00553ea-c3cc-11e7-aae0-cb18a8c29c65_story.html">
-                  Washington Post
-                </a>]
-                [<a href="https://qz.com/1070110/the-friends-you-make-in-the-first-year-of-college-can-impact-how-well-you-do/">
-                  Quartz
-                </a>]
-                [<a href="http://news.stanford.edu/2017/08/30/stressful-times-call-empathic-people/">
-                  Stanford News Release
-                </a>]
-                [<a href="https://www.insidehighered.com/news/2017/09/01/new-stanford-study-suggests-freshmen-can-pick-friends-based-needs">
-                  press
-                </a>]
-              </p>
-            </li>
-
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Zaki., J., &amp; Gruber, J. (2017). Increased cooperative behavior across remitted bipolar I disorder and major depression: Insights utilizing a behavioral economic trust game. <i>Journal of Abnormal Psychology</i>, 126(1), 1-7.
-              </p><p class="hangingindent-supplemental">
-                <!-- <br> -->
-                  <!-- [<a href="research_XXX.html">
-                    summary
-                  </a>]
-                <br> -->
-                  <!-- [ pdf ]  -->
-                  [<a href="pubs/2017_JAP_BDCooperation_inPress.pdf">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2018emotion">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b>, Goodman, N. D., &amp; Zaki, J. (2018). Happier than thou? A self-enhancement bias in emotion attribution. <i>Emotion</i>, 18(1), 116-126.
+                </p><p class="hangingindent-supplemental">
+                  [<a href="pubs/2017_Emotion_PsychDistance_inPress.pdf">
                     pre-journal-formatted version
                   </a>]
-                  <!-- [<a href="https://github.com/desmond-ong/CooperationInMoodDisorders">  -->
+                  <!--[<a href="https://github.com/desmond-ong/emotionPsychDistance/"> -->
+                    [<a href="http://desmond-ong.github.io/emotionPsychDistance/">
+                      supporting data and materials
+                    </a>]
+                    [<a href="http://psycnet.apa.org/psycinfo/2017-16353-001/">
+                      journal website
+                    </a>]
+                  </p>
+                </li>
+              </div>
+            </div>
+
+
+          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-morelli2017networks">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Morelli, S. A., <b>Ong, D. C.</b>, Makati, R., Jackson, M. O., &amp; Zaki, J. (2017). Empathy and well-being correlate with centrality in different social networks.  <i>Proceedings of the National Academy of Sciences</i>, 114(37), 9843-9847.
+                </p><p class="hangingindent-supplemental">
+                  [<a href="pubs/2017_PNAS_Morelli_EmpathySocialNetworks.pdf">
+                    pdf
+                  </a>]
+                  [<a href="pubs/2017_PNAS_Morelli_Supplemental.pdf">
+                    supplemental materials
+                  </a>]
+                  [<a href="https://doi.org/10.5281/zenodo.821788">
+                    supporting data and materials
+                  </a>]
+                  [<a href="http://www.pnas.org/content/114/37/9843.abstract">
+                    journal website
+                  </a>]
+                  <br>
+                  [<a href="https://www.washingtonpost.com/national/health-science/we-have-friends-on-facebook-and-everywhere-else-but-are-they-the-kind-we-need/2017/11/24/c00553ea-c3cc-11e7-aae0-cb18a8c29c65_story.html">
+                    Washington Post
+                  </a>]
+                  [<a href="https://qz.com/1070110/the-friends-you-make-in-the-first-year-of-college-can-impact-how-well-you-do/">
+                    Quartz
+                  </a>]
+                  [<a href="http://news.stanford.edu/2017/08/30/stressful-times-call-empathic-people/">
+                    Stanford News Release
+                  </a>]
+                  [<a href="https://www.insidehighered.com/news/2017/09/01/new-stanford-study-suggests-freshmen-can-pick-friends-based-needs">
+                    press
+                  </a>]
+                </p>
+              </li>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2017bipolarTrust">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b>, Zaki., J., &amp; Gruber, J. (2017). Increased cooperative behavior across remitted bipolar I disorder and major depression: Insights utilizing a behavioral economic trust game. <i>Journal of Abnormal Psychology</i>, 126(1), 1-7.
+                </p><p class="hangingindent-supplemental">
+                  <!-- <br> -->
+                <!-- [<a href="research_XXX.html">
+                  summary
+                </a>]
+                <br> -->
+                <!-- [ pdf ]  -->
+                [<a href="pubs/2017_JAP_BDCooperation_inPress.pdf">
+                  pre-journal-formatted version
+                </a>]
+                <!-- [<a href="https://github.com/desmond-ong/CooperationInMoodDisorders">  -->
                   [<a href="http://desmond-ong.github.io/CooperationInMoodDisorders/">
                     supporting data and materials
                   </a>]
@@ -260,137 +394,159 @@
                   [<a href="http://psycnet.apa.org/doi/10.1037/abn0000239">
                     journal website
                   </a>]
-              </p>
-            </li>
+                </p>
+              </li>
+            </div>
+          </div>
 
-            <li>
-              <p class="hangingindent">
-                Chen, P., Chavez, O., <b>Ong, D. C.</b>, &amp; Gunderson, B. (2017). Strategic Resource Use for Learning: A Self-administered Intervention that Guides Effective Resource Use Enhances Academic Performance. <i>Psychological Science</i>, 28(6), 774-785.
-              </p><p class="hangingindent-supplemental">
-                <!-- <br> -->
-                [<!-- <a href="pubs/.pdf">  -->
-                  pre-journal-formatted version
-                <!-- </a> -->]
-                [
-                  supporting data and materials (<a href="http://osf.io/5fr3d">link</a> on OSF, the Open Science Framework; access available upon <a href="http://www.patriciachen.com/requestmaterials">request</a>)
-                ]
-                [<a href="http://journals.sagepub.com/doi/full/10.1177/0956797617696456">
+
+          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-chen2017SRUL">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Chen, P., Chavez, O., <b>Ong, D. C.</b>, &amp; Gunderson, B. (2017). Strategic Resource Use for Learning: A Self-administered Intervention that Guides Effective Resource Use Enhances Academic Performance. <i>Psychological Science</i>, 28(6), 774-785.
+                </p><p class="hangingindent-supplemental">
+                  <!-- <br> -->
+                  [<!-- <a href="pubs/.pdf">  -->
+                    pre-journal-formatted version
+                  <!-- </a> -->]
+                  [
+                    supporting data and materials (<a href="http://osf.io/5fr3d">link</a> on OSF, the Open Science Framework; access available upon <a href="http://www.patriciachen.com/requestmaterials">request</a>)
+                  ]
+                  [<a href="http://journals.sagepub.com/doi/full/10.1177/0956797617696456">
                     journal website
-                </a>]
-                <br>
+                  </a>]
+                  <br>
 
-                [<a href="https://qz.com/978273/a-stanford-professors-15-minute-study-hack-improves-test-grades-by-a-third-of-a-grade/">
-                  Quartz article
-                </a>]
-                [<a href="http://news.stanford.edu/2017/05/08/studying-strategically-equals-improved-exam-scores/">
-                  Stanford News Release
-                </a>]
-                [<a href="https://www.psychologicalscience.org/news/releases/thinking-strategically-about-study-resources-boosts-students-final-grades.html">
-                  Psychological Science News Release
-                </a>]
-                [<a href="https://www.usnews.com/education/best-colleges/articles/2017-05-12/a-15-minute-survey-could-boost-your-gpa">
-                  U.S. News &amp; World Report
-                </a>]
-                [<a href="http://www.businessinsider.de/eine-standford-forscherin-erklaert-wir-ihr-eure-noten-verbessert-2017-5">
-                  Business Insider (German)
-                </a>]
-                <br>
+                  [<a href="https://qz.com/978273/a-stanford-professors-15-minute-study-hack-improves-test-grades-by-a-third-of-a-grade/">
+                    Quartz article
+                  </a>]
+                  [<a href="http://news.stanford.edu/2017/05/08/studying-strategically-equals-improved-exam-scores/">
+                    Stanford News Release
+                  </a>]
+                  [<a href="https://www.psychologicalscience.org/news/releases/thinking-strategically-about-study-resources-boosts-students-final-grades.html">
+                    Psychological Science News Release
+                  </a>]
+                  [<a href="https://www.usnews.com/education/best-colleges/articles/2017-05-12/a-15-minute-survey-could-boost-your-gpa">
+                    U.S. News &amp; World Report
+                  </a>]
+                  [<a href="http://www.businessinsider.de/eine-standford-forscherin-erklaert-wir-ihr-eure-noten-verbessert-2017-5">
+                    Business Insider (German)
+                  </a>]
+                  <br>
 
-                [<a href="http://bigthink.com/paul-ratner/how-metacognition-thinking-about-thinking-can-help-your-life">
-                  press
-                </a>]
-                [<a href="http://www.dailymail.co.uk/sciencetech/article-4491452/15-minute-study-help-child-A.html">
-                  press
-                </a>]
-                [<a href="https://www.eurekalert.org/pub_releases/2017-05/afps-tsa042817.php">
-                  press
-                </a>]
-                [<a href="http://www.futurity.org/strategically-studying-exam-1423542/">
-                  press
-                </a>]
-                [<a href="https://www.indy100.com/article/study-hack-revising-improve-grades-stanford-university-15-minutes-trick-7728186">
-                  press
-                </a>]
-                [<a href="https://www.joe.ie/life-style/stanford-professor-believes-15-minute-study-tip-will-drastically-improve-results-587975">
-                  press
-                </a>]
-                [<a href="http://www.medicaldaily.com/how-get-better-grades-15-minutes-metacognition-smart-studying-technique-helps-417213">
-                  press
-                </a>]
-                [<a href="http://www.mercurynews.com/2017/05/08/finals-week-a-new-stanford-study-reveals-how-to-ace-those-tests/">
-                  press
-                </a>]
-                [<a href="https://psychcentral.com/news/2017/05/06/students-who-strategically-reflect-on-how-to-study-do-better/120152.html">
-                  press
-                </a>]
-                [<a href="https://scienceblog.com/493918/strategizing-resources-leads-improved-exam-scores/">
-                  press
-                </a>]
-                [<a href="https://www.sciencedaily.com/releases/2017/05/170501094252.htm">
-                  press
-                </a>]
-                [<a href="http://www.theaustralian.com.au/higher-education/strategic-approach-to-achieving-higher-grade/news-story/28da41aca1bc178625f4cf4dd3955d3e">
-                  press
-                </a>]
-                [<a href="http://therapytoronto.ca/news/2017/05/thinking-strategically-about-study-resources-boosts-students-final-grades/">
-                  press
-                </a>]
-                [<a href="http://www.universityherald.com/articles/74603/20170505/strategic-reflection-study-resources-improve-students-final-grade-stanford-suggests.htm">
-                  press
-                </a>]
-                [<a href="http://wmot.org/post/need-ace-test-study-strategically">
-                  press
-                </a>]
-                [<a href="http://news.xinhuanet.com/english/2017-05/15/c_136283170.htm">
-                  press
-                </a>]
-                <!-- press -->
-                <!-- http://news.mb.com.ph/2017/05/15/strategizing-resources-found-leading-to-improved-college-exam-scores/ -->
-                <!-- http://www.elconfidencial.com/alma-corazon-vida/2017-05-15/truco-mejores-notas-stanford_1381304/ -->
-                <!-- https://www.hk01.com/%E7%86%B1%E8%A9%B1/90275/%E5%A4%A7%E5%AD%B8%E7%94%9F%E6%9C%80%E6%80%95-%E7%88%9BGrade-%E7%A0%94%E7%A9%B6%E6%8C%87-%E9%97%9C%E9%8D%B515%E5%88%86%E9%90%98-%E6%9C%89%E5%8A%A9%E7%94%B1B-%E5%8D%87A%E7%B4%9A -->
-                <!-- http://www.dailydemocrat.com/social-affairs/20170515/research-offers-tips-on-acing-finals-week -->
-              </p>
-            </li>
+                  [<a href="http://bigthink.com/paul-ratner/how-metacognition-thinking-about-thinking-can-help-your-life">
+                    press
+                  </a>]
+                  [<a href="http://www.dailymail.co.uk/sciencetech/article-4491452/15-minute-study-help-child-A.html">
+                    press
+                  </a>]
+                  [<a href="https://www.eurekalert.org/pub_releases/2017-05/afps-tsa042817.php">
+                    press
+                  </a>]
+                  [<a href="http://www.futurity.org/strategically-studying-exam-1423542/">
+                    press
+                  </a>]
+                  [<a href="https://www.indy100.com/article/study-hack-revising-improve-grades-stanford-university-15-minutes-trick-7728186">
+                    press
+                  </a>]
+                  [<a href="https://www.joe.ie/life-style/stanford-professor-believes-15-minute-study-tip-will-drastically-improve-results-587975">
+                    press
+                  </a>]
+                  [<a href="http://www.medicaldaily.com/how-get-better-grades-15-minutes-metacognition-smart-studying-technique-helps-417213">
+                    press
+                  </a>]
+                  [<a href="http://www.mercurynews.com/2017/05/08/finals-week-a-new-stanford-study-reveals-how-to-ace-those-tests/">
+                    press
+                  </a>]
+                  [<a href="https://psychcentral.com/news/2017/05/06/students-who-strategically-reflect-on-how-to-study-do-better/120152.html">
+                    press
+                  </a>]
+                  [<a href="https://scienceblog.com/493918/strategizing-resources-leads-improved-exam-scores/">
+                    press
+                  </a>]
+                  [<a href="https://www.sciencedaily.com/releases/2017/05/170501094252.htm">
+                    press
+                  </a>]
+                  [<a href="http://www.theaustralian.com.au/higher-education/strategic-approach-to-achieving-higher-grade/news-story/28da41aca1bc178625f4cf4dd3955d3e">
+                    press
+                  </a>]
+                  [<a href="http://therapytoronto.ca/news/2017/05/thinking-strategically-about-study-resources-boosts-students-final-grades/">
+                    press
+                  </a>]
+                  [<a href="http://www.universityherald.com/articles/74603/20170505/strategic-reflection-study-resources-improve-students-final-grade-stanford-suggests.htm">
+                    press
+                  </a>]
+                  [<a href="http://wmot.org/post/need-ace-test-study-strategically">
+                    press
+                  </a>]
+                  [<a href="http://news.xinhuanet.com/english/2017-05/15/c_136283170.htm">
+                    press
+                  </a>]
+                  <!-- press -->
+                  <!-- http://news.mb.com.ph/2017/05/15/strategizing-resources-found-leading-to-improved-college-exam-scores/ -->
+                  <!-- http://www.elconfidencial.com/alma-corazon-vida/2017-05-15/truco-mejores-notas-stanford_1381304/ -->
+                  <!-- https://www.hk01.com/%E7%86%B1%E8%A9%B1/90275/%E5%A4%A7%E5%AD%B8%E7%94%9F%E6%9C%80%E6%80%95-%E7%88%9BGrade-%E7%A0%94%E7%A9%B6%E6%8C%87-%E9%97%9C%E9%8D%B515%E5%88%86%E9%90%98-%E6%9C%89%E5%8A%A9%E7%94%B1B-%E5%8D%87A%E7%B4%9A -->
+                  <!-- http://www.dailydemocrat.com/social-affairs/20170515/research-offers-tips-on-acing-finals-week -->
+                </p>
+              </li>
+            </div>
+          </div>
 
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.*</b>, Asaba, M.*, &amp; Gweon, H. (2016). Young children and adults integrate past expectations and current outcomes to reason about others' emotions. In <i>Proceedings of the 38th Annual Meeting of the Cognitive Science Society</i>, 135-140.
-                <br>
-                * equal contribution
-              </p><p class="hangingindent-supplemental">
-                <!-- [ summary ]
-                <br> -->
-                [<a href="pubs/2016_Cogsci_Bowling.pdf">
+
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2016bowling">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.*</b>, Asaba, M.*, &amp; Gweon, H. (2016). Young children and adults integrate past expectations and current outcomes to reason about others' emotions. In <i>Proceedings of the 38th Annual Meeting of the Cognitive Science Society</i>, 135-140.
+                  <br>
+                  * equal contribution
+                </p><p class="hangingindent-supplemental">
+                  <!-- [ summary ]
+                  <br> -->
+                  [<a href="pubs/2016_Cogsci_Bowling.pdf">
+                    pdf
+                  </a>]
+                  [<a href="https://github.com/desmond-ong/bowling/">
+                    supporting data and materials
+                  </a>]
+                </p>
+              </li>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2016explanations">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b>, Zaki, J. &amp; Goodman, N. D. (2016). Emotions in lay explanations of behavior. In <i>Proceedings of the 38th Annual Meeting of the Cognitive Science Society</i>, 360-365.
+                </p><p class="hangingindent-supplemental">
+                  <!-- [ summary ] -->
+                  <!-- <br> -->
+                  [<a href="pubs/2016_Cogsci_Explanations.pdf">
                   pdf
-                </a>]
-                [<a href="https://github.com/desmond-ong/bowling/">
-                  supporting data and materials
-                </a>]
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Zaki, J. &amp; Goodman, N. D. (2016). Emotions in lay explanations of behavior. In <i>Proceedings of the 38th Annual Meeting of the Cognitive Science Society</i>, 360-365.
-              </p><p class="hangingindent-supplemental">
-                <!-- [ summary ] -->
-                <!-- <br> -->
-                [<a href="pubs/2016_Cogsci_Explanations.pdf">
-                  pdf
-                </a>]
-                <!-- [<a href="https://github.com/desmond-ong/shakespeare/">  -->
-                [<a href="http://desmond-ong.github.io/shakespeare/">
-                  supporting data and materials
-                </a>]
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                Devlin, H. C., Zaki., J., <b>Ong, D. C.</b>, &amp; Gruber, J. (2016). Tracking the emotional highs, but missing the lows: Hypomania Risk is associated with positively biased empathic accuracy inference. <i>Cognitive Therapy and Research</i>, 40(1), 72-79.
-              </p><p class="hangingindent-supplemental">
+                  </a>]
+                  <!-- [<a href="https://github.com/desmond-ong/shakespeare/">  -->
+                  [<a href="http://desmond-ong.github.io/shakespeare/">
+                    supporting data and materials
+                  </a>]
+                </p>
+              </li>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-devlin2016hypomania">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Devlin, H. C., Zaki., J., <b>Ong, D. C.</b>, &amp; Gruber, J. (2016). Tracking the emotional highs, but missing the lows: Hypomania Risk is associated with positively biased empathic accuracy inference. <i>Cognitive Therapy and Research</i>, 40(1), 72-79.
+                </p><p class="hangingindent-supplemental">
                   [<a href="research_happinessEmpathicAccuracy.html">
                     summary
                   </a>]
-                <br>
+                  <br>
                   [<!-- <a href="pubs/2016_CoTR_Hypomania_EA_journalPDF.pdf"></a> --> pdf ]
                   [<a href="pubs/2015_HypomaniaRisk_Preprint.pdf">
                     pre-journal-formatted version
@@ -399,42 +555,51 @@
                   [<a href="http://link.springer.com/article/10.1007/s10608-015-9720-6">
                     journal website
                   </a>]
-              </p>
-            </li>
+                </p>
+              </li>
+            </div>
+          </div>
 
-            <li>
-              <p class="hangingindent">
-                Nook, E., <b>Ong, D. C.</b>, Morelli, S. A., Mitchell, J. P., &amp; Zaki, J. (2016). Prosocial Conformity: Social norms motivate broad generosity and empathy. <i>Personality and Social Psychology Bulletin</i>, 42(8), 1045-1062. doi: 10.1177/0146167298248001
-              </p><p class="hangingindent-supplemental">
-                <!-- [ summary ] -->
-                <!-- <br> -->
-                [<a href="pubs/2016_PSPB_Prosocial_Conformity_Nook_inPress.pdf">
-                  pre-journal-formatted version
-                </a>]
-                [<a href="pubs/2016_PSPB_Prosocial_Conformity_Nook_Supplementals.pdf">
-                  supplemental materials
-                </a>]
-                [<a href="http://ssnl.stanford.edu/sites/default/files/data/PSCData.zip">
-                  supporting data and materials
-                </a>]
-                [<a href="http://psp.sagepub.com/content/42/8/1045">
+
+          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-nook2016prosocial">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Nook, E., <b>Ong, D. C.</b>, Morelli, S. A., Mitchell, J. P., &amp; Zaki, J. (2016). Prosocial Conformity: Social norms motivate broad generosity and empathy. <i>Personality and Social Psychology Bulletin</i>, 42(8), 1045-1062. doi: 10.1177/0146167298248001
+                </p><p class="hangingindent-supplemental">
+                  <!-- [ summary ] -->
+                  <!-- <br> -->
+                  [<a href="pubs/2016_PSPB_Prosocial_Conformity_Nook_inPress.pdf">
+                    pre-journal-formatted version
+                  </a>]
+                  [<a href="pubs/2016_PSPB_Prosocial_Conformity_Nook_Supplementals.pdf">
+                    supplemental materials
+                  </a>]
+                  [<a href="http://ssnl.stanford.edu/sites/default/files/data/PSCData.zip">
+                    supporting data and materials
+                  </a>]
+                  [<a href="http://psp.sagepub.com/content/42/8/1045">
                     journal website
                   </a>] <br>
-
                   [<a href="http://www.scientificamerican.com/article/kindness-contagion/">
                     Scientific American article
                   </a>] [ <a href="https://psmag.com/is-generosity-contagious-1b1534b8ac26">press</a> (<a href="http://www.psychologicalscience.org/index.php/news/is-generosity-contagious.html">aps link</a>) ]
-              </p>
-            </li>
+                </p>
+              </li>
+            </div>
+          </div>
 
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Zaki, J., &amp; Goodman, N. D. (2015). Affective Cognition: Exploring lay theories of emotion. <i>Cognition</i>, 143, 141-162.
-              </p><p class="hangingindent-supplemental">
+
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative" id="pub-ong2015affCog">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b>, Zaki, J., &amp; Goodman, N. D. (2015). Affective Cognition: Exploring lay theories of emotion. <i>Cognition</i>, 143, 141-162.
+                </p><p class="hangingindent-supplemental">
                   [<a href="research_affCog.html">
                     summary
                   </a>]
-                <br>
+                  <br>
                   [<a href="pubs/2015_Affective_Cognition.pdf">
                     pdf
                   </a>]
@@ -446,31 +611,43 @@
                   [<a href="http://www.sciencedirect.com/science/article/pii/S0010027715300196">
                     journal website
                   </a>]
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Goodman, N. D., &amp; Zaki, J. (2015). Near-misses sting even when they are uncontrollable. In <i>Proceedings of the 37th Annual Meeting of the Cognitive Science Society</i>, 1775-1780.
-              </p><p class="hangingindent-supplemental">
-                <!-- [ summary ] -->
-                <!-- <br> -->
-                [<a href="pubs/2015_Cogsci_Nearmiss.pdf">
-                  pdf
-                </a>]
-                [<a href="https://www.github.com/desmond-ong/near-miss/">
-                  supporting data and materials
-                </a>]
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                Phillips, J.*, <b>Ong, D. C.*</b>, Surtees, A. D. R., Xin, Y., Williams, S., Saxe, R., &amp; Frank, M. C. (2015). A second look at automatic false belief representation: reconsidering Kov&aacute;cs, T&eacute;gl&aacute;s, and Endress (2010). <i>Psychological Science</i>, 26 (9), 1353-1367.
-                <br>
-                * equal contribution
+                </p>
+              </li>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2015nearMisses">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b>, Goodman, N. D., &amp; Zaki, J. (2015). Near-misses sting even when they are uncontrollable. In <i>Proceedings of the 37th Annual Meeting of the Cognitive Science Society</i>, 1775-1780.
                 </p><p class="hangingindent-supplemental">
-                <!-- [ summary ]  -->
-                <!-- <br> -->
-                <!-- [ <a href="pubs/2015_PsychSci_ReconsideringAutomaticToM_journalPDF.pdf">pdf</a> ]  -->
+                  <!-- [ summary ] -->
+                  <!-- <br> -->
+                  [<a href="pubs/2015_Cogsci_Nearmiss.pdf">
+                    pdf
+                  </a>]
+                  [<a href="https://www.github.com/desmond-ong/near-miss/">
+                    supporting data and materials
+                  </a>]
+                </p>
+              </li>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-phillips2015KTE">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Phillips, J.*, <b>Ong, D. C.*</b>, Surtees, A. D. R., Xin, Y., Williams, S., Saxe, R., &amp; Frank, M. C. (2015). A second look at automatic false belief representation: reconsidering Kov&aacute;cs, T&eacute;gl&aacute;s, and Endress (2010). <i>Psychological Science</i>, 26 (9), 1353-1367.
+                  <br>
+                  * equal contribution
+                </p><p class="hangingindent-supplemental">
+                  <!-- [ summary ]  -->
+                  <!-- <br> -->
+                  <!-- [ <a href="pubs/2015_PsychSci_ReconsideringAutomaticToM_journalPDF.pdf">pdf</a> ]  -->
                   [<a href="pubs/2015_PsychSci_ReconsideringAutomaticToM.pdf">
                     pre-journal-formatted version
                   </a>]
@@ -487,17 +664,22 @@
                   <a href="http://babieslearninglanguage.blogspot.com/2015/05/an-update-on-automatic-belief-encoding.html">
                     followup blogpost
                   </a>]
-              </p>
-            </li>
+                </p>
+              </li>
+            </div>
+          </div>
 
-            <li>
-              <p class="hangingindent">
-                Devlin, H. C., Zaki., J., <b>Ong, D. C.</b>, &amp; Gruber, J. (2014). Not as Good as You Think? Trait Positive Emotion is Associated with Increased Self-Reported Empathy but Decreased Empathic Performance. <i>PLOS ONE</i>, 9(10), e110470.
-              </p><p class="hangingindent-supplemental">
+
+          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-devlin2014positiveEmotion">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Devlin, H. C., Zaki., J., <b>Ong, D. C.</b>, &amp; Gruber, J. (2014). Not as Good as You Think? Trait Positive Emotion is Associated with Increased Self-Reported Empathy but Decreased Empathic Performance. <i>PLOS ONE</i>, 9(10), e110470.
+                </p><p class="hangingindent-supplemental">
                   [<a href="research_happinessEmpathicAccuracy.html">
                     summary
                   </a>]
-                <br>
+                  <br>
 
                   [<a href="pubs/2014_PLOS_PositiveEmotionEmpathy.pdf">
                     pdf
@@ -508,10 +690,10 @@
                   [<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110470">
                     journal website
                   </a>]
-                <br>
+                  <br>
                   [<a href="http://www.forbes.com/sites/daviddisalvo/2014/12/10/why-happy-people-arent-as-empathetic-as-they-think/">
                     Forbes
-                   </a>]
+                  </a>]
                   [<a href="http://www.huffingtonpost.com/2014/11/30/happy-people-empathy_n_6226284.html?utm_hp_ref=email_share">
                     HuffPost
                   </a>]
@@ -528,29 +710,34 @@
                     press
                   </a>] <br>
                   [ Nov 2014, Made it to <a href="img/research_eots_reddit_all.png">
-                    #13 on the front page of Reddit</a>, and
+                  #13 on the front page of Reddit</a>, and
                   <a href="img/research_eots_reddit_science.png">
-                    #1 on r/Science</a>,
-                    with over <a href="http://www.reddit.com/r/science/comments/2nbdph/happy_people_think_theyre_good_at_empathising/">6,600 upvotes and 800 comments
+                  #1 on r/Science</a>,
+                  with over <a href="http://www.reddit.com/r/science/comments/2nbdph/happy_people_think_theyre_good_at_empathising/">6,600 upvotes and 800 comments
                   </a>] <br>
                   [ Mar 2017, Made it to <a href="img/research_eots_reddit_2.png">
-                    #1 on the front page of Reddit</a>,
-                    with over <a href="https://www.reddit.com/r/science/comments/60bhlu/extremely_positive_people_arent_as_good_at/">26,600 upvotes and 1.3k comments
+                  #1 on the front page of Reddit</a>,
+                  with over <a href="https://www.reddit.com/r/science/comments/60bhlu/extremely_positive_people_arent_as_good_at/">26,600 upvotes and 1.3k comments
                   </a>]
-              </p>
-            </li>
+                </p>
+              </li>
+            </div>
+          </div>
 
-            <br>
-            <b> Previous work in physics and optics </b>
-            <br><br>
-            <li>
-              <p class="hangingindent">
-                Leahy, B. D., Cheng, X., <b>Ong, D. C.</b>, Liddell-Watson, C., &amp; Cohen, I. (2013) Enhancing rotational diffusion using oscillatory shear.  <i>Physical Review Letters</i>, <b>110</b>, 228301
+
+          <div class="collapse collapse-pub-all collapse-pub-others" id="pub-leahy2013PRL">
+            <div class="my-card">
+              <br>
+              <b> Previous work in physics and optics </b>
+              <br><br>
+              <li>
+                <p class="hangingindent">
+                  Leahy, B. D., Cheng, X., <b>Ong, D. C.</b>, Liddell-Watson, C., &amp; Cohen, I. (2013) Enhancing rotational diffusion using oscillatory shear.  <i>Physical Review Letters</i>, <b>110</b>, 228301
                 </p><p class="hangingindent-supplemental">
                   [<a href="research_shear.html">
                     summary
                   </a>]
-                <br>
+                  <br>
                   [<a href="pubs/2013_PRL_Shear_Diffusion.pdf">
                     pdf
                   </a>]
@@ -560,166 +747,299 @@
                   [<a href="http://www.news.cornell.edu/stories/2013/03/stirred-not-shaken-physicists-gain-more-particle-control">
                     press
                   </a>]
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Solanki, S., Liang, X., &amp; Xu, X. (2012). Analysis of laser speckle severity, granularity, and anisotropy using the power spectral density in polar-coordinate representation. <i>Optical Engineering</i>, <b>51</b>, 054301
+                </p>
+              </li>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-pub-all collapse-pub-others collapse-pub-firstAuthor" id="pub-ong2012speckle">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b>, Solanki, S., Liang, X., &amp; Xu, X. (2012). Analysis of laser speckle severity, granularity, and anisotropy using the power spectral density in polar-coordinate representation. <i>Optical Engineering</i>, <b>51</b>, 054301
                 </p><p class="hangingindent-supplemental">
                   [<a href="research_speckle.html">
                     summary
                   </a>]
-                <br>
+                  <br>
                   [<a href="pubs/2012_OE_Speckle.pdf">
                     pdf
                   </a>]
                   [<a href="http://opticalengineering.spiedigitallibrary.org/article.aspx?articleid=1183636">
                     journal website
                   </a>]
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                Gerbode, S. J., <b>Ong, D. C.</b>, Liddell, C. M., &amp; Cohen, I. (2010). Dislocations and vacancies in two-dimensional mixed crystals of spheres and dimers. <i>Physical Review E</i>, <b>82</b>, 041404
+                </p>
+              </li>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-pub-all collapse-pub-others" id="pub-gerbode2010PRE">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Gerbode, S. J., <b>Ong, D. C.</b>, Liddell, C. M., &amp; Cohen, I. (2010). Dislocations and vacancies in two-dimensional mixed crystals of spheres and dimers. <i>Physical Review E</i>, <b>82</b>, 041404
                 </p><p class="hangingindent-supplemental">
                   [<a href="research_dimers.html">
                     summary
                   </a>]
-                <br>
+                  <br>
                   [<a href="pubs/2010_PRE_Vacancy_Diffusion.pdf">
                     pdf
                   </a>]
                   [<a href="http://journals.aps.org/pre/abstract/10.1103/PhysRevE.82.041404">
                     journal website
                   </a>]
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                Gerbode, S. J., Agarwal, U., <b>Ong, D. C.</b>, Liddell, C. M., Escobedo, F., &amp; Cohen, I. (2010). Glassy Dislocation Dynamics in 2-D Colloidal Dimer Crystals. <i>Physical Review Letters</i>, <b>105</b>, 078301
+                </p>
+              </li>
+            </div>
+          </div>
+
+
+          <div class="collapse collapse-pub-all collapse-pub-others" id="pub-gerbode2010PRL">
+            <div class="my-card">
+              <li>
+                <p class="hangingindent">
+                  Gerbode, S. J., Agarwal, U., <b>Ong, D. C.</b>, Liddell, C. M., Escobedo, F., &amp; Cohen, I. (2010). Glassy Dislocation Dynamics in 2-D Colloidal Dimer Crystals. <i>Physical Review Letters</i>, <b>105</b>, 078301
                 </p><p class="hangingindent-supplemental">
                   [<a href="research_dimers.html">
                     summary
                   </a>]
-                <br>
+                  <br>
                   [<a href="pubs/2010_PRL_Glassy_Dislocation_Dynamics.pdf">
                     pdf
                   </a>]
                   [<a href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.078301">
                     journal website
                   </a>]
-              </p>
-            </li>
-          </ol>
+                </p>
+              </li>
+            </div>
+          </div>
 
+          </ol>
           <br>
-          <h3>
+        </div> <!-- <div id="publicationList-underReview-Div"> -->
+      </div> <!-- div col -->
+    </div> <!-- div class=row -->
+    <div class="row">
+      <div class="col">
+        <button id="button-theses" class="btn btn-info my-btn" type="button" data-toggle="collapse" data-target=".collapse-theses" aria-expanded="false" aria-controls="pub-theses">
+          Toggle Theses/Projects
+        </button>
 
-            Theses &amp; Dissertations
-
-          </h3>
-          <ol reversed>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b> (2017). <i>Computational Affective Cognition: Modeling Reasoning about Emotions</i>. Doctoral Dissertation, Stanford University.
-              </p>
-            </li><li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b> (2011). <i>Serial Reciprocity: What makes us want to 'pass it on'?</i>. Honors Thesis, Cornell University.
-                <br>
-                * awarded <i>summa cum laude</i> for best thesis.
-              </p>
-            </li>
-          </ol>
-
-          <h3>
-
-            (Unpublished) Class Projects
-
-          </h3>
-
-          <ol reversed>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b> (2015). Continuous emotion inference from speech signals. CS 221: Artificial Intelligence, Stanford University, Autumn 2015.
-              </p>
-            </li>
-
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Soh, S., &amp; Long, M. (2015). Extracting Aspect-level Sentiment from Product Reviews. CS 224D: Deep Learning for NLP, Stanford University, Spring 2015.
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b>, Chio, C., &amp; Kek, J. (2014). Predicting mood transitions from text interactions on the Experience Project. CS 224U: Natural Language Understanding, Stanford University, Spring 2014.
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b> &amp; Shen, M. (2013). Analyzing Social Support on the Experience Project. CS 224W: Social and Information Networks, Stanford University, Fall 2013.
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b> &amp; Lui., W. H. (2013). Building an Emotional Relation Extraction Tool. CS 224N: Natural Language Processing, Stanford University, Fall 2013.
-                <br>
-                Lui., W. H., &amp; <b>Ong, D. C.</b> (2013). Sentiment Causation Extraction. (Lui's) CS 229: Machine Learning, Stanford University, Fall 2013.
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                Wu., J. Y., &amp; <b>Ong, D. C.</b> (2012). Predicting Sentiment from Rotten Tomatoes Movie Reviews. CS 229: Machine Learning, Stanford University, Fall 2012.
-              </p>
-            </li>
-          </ol>
-
-
-          <!-- <h3>
-
-            Conference Talks
-
-          </h3>
-          <ol reversed>
+        <div class="collapse collapse-theses" id="pub-theses">
+          <div class="my-card">
+            <br>
+            <h3>
+              Theses &amp; Dissertations
+            </h3>
+            <ul>
               <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b> Goodman, N. D., &amp; Zaki, J. (January 2016). Happier than thou: an egocentric positivity bias in emotion attribution. Talk in contributed symposium at the Seventeenth Annual Meeting of the Society for Personality and Social Psychology, San Diego, CA.
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b> Zaki, J., &amp; Goodman, N. D. (February 2015). Modeling lay theories of emotion attribution. Talk in contributed symposium at the Sixteenth Annual Meeting of the Society for Personality and Social Psychology, Long Beach, CA.
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b> Zaki, J., &amp; Goodman, N. D. (July 2014). Modeling lay theories of emotion attribution. Talk in contributed symposium at the 36th Annual Meeting of the Cognitive Science Society, Quebec City, QC, Canada.
-              </p>
-            </li>
-            <li>
-              <p class="hangingindent">
-                <b>Ong, D. C.</b> Goodman, N. D., &amp; Zaki, J. (February 2014). Differences in intuitive theories of emotion along psychological distance. Talk given at the Emotion Preconference of the Fifteenth Annual Meeting of the Society for Personality and Social Psychology, Austin, TX.
-              </p>
-            </li>
-          </ol> -->
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b> (2017). <i>Computational Affective Cognition: Modeling Reasoning about Emotions</i>. Doctoral Dissertation, Stanford University.
+                </p>
+              </li><li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b> (2011). <i>Serial Reciprocity: What makes us want to 'pass it on'?</i>. Honors Thesis, Cornell University.
+                  <br>
+                  * awarded <i>summa cum laude</i> for best thesis.
+                </p>
+              </li>
+            </ul>
 
-        </div> <!-- end publicationListDiv -->
+            <h3>
+              (Unpublished) Class Projects
+            </h3>
+            <ul>
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b> (2015). Continuous emotion inference from speech signals. CS 221: Artificial Intelligence, Stanford University, Autumn 2015.
+                </p>
+              </li>
+
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b>, Soh, S., &amp; Long, M. (2015). Extracting Aspect-level Sentiment from Product Reviews. CS 224D: Deep Learning for NLP, Stanford University, Spring 2015.
+                </p>
+              </li>
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b>, Chio, C., &amp; Kek, J. (2014). Predicting mood transitions from text interactions on the Experience Project. CS 224U: Natural Language Understanding, Stanford University, Spring 2014.
+                </p>
+              </li>
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b> &amp; Shen, M. (2013). Analyzing Social Support on the Experience Project. CS 224W: Social and Information Networks, Stanford University, Fall 2013.
+                </p>
+              </li>
+              <li>
+                <p class="hangingindent">
+                  <b>Ong, D. C.</b> &amp; Lui., W. H. (2013). Building an Emotional Relation Extraction Tool. CS 224N: Natural Language Processing, Stanford University, Fall 2013.
+                  <br>
+                  Lui., W. H., &amp; <b>Ong, D. C.</b> (2013). Sentiment Causation Extraction. (Lui's) CS 229: Machine Learning, Stanford University, Fall 2013.
+                </p>
+              </li>
+              <li>
+                <p class="hangingindent">
+                  Wu., J. Y., &amp; <b>Ong, D. C.</b> (2012). Predicting Sentiment from Rotten Tomatoes Movie Reviews. CS 229: Machine Learning, Stanford University, Fall 2012.
+                </p>
+              </li>
+            </ul>
+          </div> <!-- div card -->
+        </div> <!-- div collapse -->
+      </div> <!-- div col -->
+    </div> <!-- div row -->
+
+    <br><br>
+
+  <!-- </div> --> <!-- end row -->
+  </div>  <!-- End Page Content Container -->
+
+  <footer class="py-3 bg-light">
+    <div class="container">
+      <p class="m-0 text-muted"> created by Desmond C. Ong using Bootstrap. Layout last updated November 2017. </p>
+    </div>
+  </footer>
+
+      <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+  $(document).ready(function(){
+
+    updatePubDisplayStatusSpan = function(togglerButtonName) {
+      switch(togglerButtonName) {
+        case "psych":
+        displayString = "Displaying Psychology Publications";
+        break;
+        case "CS":
+        // displayString = "Displaying Computer Science Publications <br> (including Journals, Conferences and Workshops)";
+        displayString = "Displaying Computer Science Publications";
+        break;
+        case "others":
+        displayString = "Displaying only publications in other <br> (non-Psychology, non-Computer Science) fields";
+        break;
+        case "representative":
+        displayString = "Displaying Most Representative Publications";
+        break;
+        case "first":
+        displayString = "Displaying First and co-First-Authored Publications";
+        break;
+        case "senior":
+        displayString = "Displaying Senior-Authored Publications";
+        break;
+        default:
+        displayString = "Currently showing all publications";
+      }
+      $('#pub-display-status-span').html(displayString);
+
+        // psychShown = !$('#button-psych').hasClass("active")
+        // CSShown = !$('#button-CS').hasClass("active")
+        // othersShown = !$('#button-otherPubs').hasClass("active")
+
+        // switch(togglerButtonName) {
+        //   case "psych": psychShown = !psychShown; break;
+        //   case "CS": CSShown = !CSShown; break;
+        //   case "others": othersShown = !othersShown; break;
+        // }
+
+        // if(psychShown & CSShown & othersShown) {
+        //   $('#pub-display-status-span').html("Currently showing all publications");
+        // } else if (psychShown & !CSShown & !othersShown) {
+        //   $('#pub-display-status-span').html("Displaying only Psychology publications");
+        // } else if (!psychShown & CSShown & !othersShown) {
+        //   $('#pub-display-status-span').html("Displaying only Computer Science Publications (including Journals, Conferences and Workshops)");
+        // } else if (!psychShown & !CSShown & othersShown) {
+        //   $('#pub-display-status-span').html("Displaying only publications in other fields");
+        // } else if (psychShown & CSShown & !othersShown) {
+        //   $('#pub-display-status-span').html("Displaying Psychology and Computer Science publications");
+        // } else if (psychShown & !CSShown & othersShown) {
+        //   $('#pub-display-status-span').html("Displaying Psychology publications and publications in other fields");
+        // } else if (!psychShown & CSShown & othersShown) {
+        //   $('#pub-display-status-span').html("Displaying Computer Science publications and publications in other fields");
+        // } else if (!psychShown & !CSShown & !othersShown) {
+        //   $('#pub-display-status-span').html("Nothing selected. Click on a button above to select a set of publications");
+        // }
+
+    } // end updatePubDisplayStatusSpan()
 
 
+    $('#button-all').click(function () {
+      $(".collapse-pub-all").collapse('show');
+      updatePubDisplayStatusSpan();
+    });
 
-      <!-- </div> --> <!-- end row -->
-    </div>  <!-- End Page Content -->
+    $('#button-psych').click(function () {
+      $('.collapse-pub-psych').collapse('show');
+      $(".collapse-pub-CS").collapse('hide');
+      $(".collapse-pub-others").collapse('hide');
+      updatePubDisplayStatusSpan("psych");
+      // if($(this).hasClass("active")){
+      //  $(this).html("Hide Psychology Publications");
+      // } else {
+      //  $(this).html("Show Psychology Publications");
+      // }
+    });
+    $('#button-CS').click(function () {
+      // $('.collapse-pub-CS').collapse('toggle');
+      $('.collapse-pub-psych').collapse('hide');
+      $(".collapse-pub-CS").collapse('show');
+      $(".collapse-pub-others").collapse('hide');
+      updatePubDisplayStatusSpan("CS");
+     // if($(this).hasClass("active")){
+     //  $(this).html("Hide Computer Science Publications");
+     // } else {
+     //  $(this).html("Show Computer Science Publications");
+     // }
+    });
+    $('#button-otherPubs').click(function () {
+      // $('.collapse-pub-others').collapse('toggle');
+      $('.collapse-pub-psych').collapse('hide');
+      $(".collapse-pub-CS").collapse('hide');
+      $(".collapse-pub-others").collapse('show');
+      updatePubDisplayStatusSpan("others");
+      // if($(this).hasClass("active")){
+      //  $(this).html("Hide Other Publications");
+      // } else {
+      //  $(this).html("Show Other Publications");
+      // }
+    });
+    $('#button-representative').click(function () {
+      $(".collapse-pub-notRepresentative").collapse('hide');
+      $(".collapse-pub-representative").collapse('show');
+      updatePubDisplayStatusSpan("representative");
+    });
+    $('#button-firstAuthored').click(function () {
+      $(".collapse-pub-notFirstAuthor").collapse('hide');
+      $(".collapse-pub-firstAuthor").collapse('show');
+      updatePubDisplayStatusSpan("first");
+    });
+    $('#button-seniorAuthored').click(function () {
+      $(".collapse-pub-notSeniorAuthor").collapse('hide');
+      $(".collapse-pub-seniorAuthor").collapse('show');
+      updatePubDisplayStatusSpan("senior");
+    });
 
-    <footer class="py-3 bg-light">
-      <div class="container">
-        <p class="m-0 text-muted"> created by Desmond C. Ong using Bootstrap. Layout last updated November 2017. </p>
-      </div>
-    </footer>
+    $(".collapse-pub-all").each(function(){
+      if(!$(this).hasClass("collapse-pub-firstAuthor")) {
+        $(this).addClass("collapse-pub-notFirstAuthor");
+      }
+      if(!$(this).hasClass("collapse-pub-seniorAuthor")) {
+        $(this).addClass("collapse-pub-notSeniorAuthor");
+      }
+      if(!$(this).hasClass("collapse-pub-representative")) {
+        $(this).addClass("collapse-pub-notRepresentative");
+      }
+    });
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    $(".collapse-pub-all").collapse('show');
+    $(".collapse-theses").collapse('show');
 
-  </body>
+  });
+  </script>
+
+</body>
 
 </html>
