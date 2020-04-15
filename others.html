@@ -100,9 +100,15 @@
                   One-line redaction of identifiable information in R
                 </h5>
                 <p class="card-text">
-                  Simple one liner to replace identifiable information (e.g. mTurk workerids):
+                  Simple one liner to replace identifiable information (e.g. mTurk workerids). (Has some cons, but it's fast.)
                   <br>
-              <code>d0$workerid <- match(d0$workerid, unique(sort(d0$workerid)))</code>
+                  <code>d0$workerid_random <- match(d0$workerid, unique(sort(d0$workerid)))</code>
+                <br><br> 
+                If you want to be even cooler and use a one-way hash function, here's a one-liner using the <code>digest()</code> function (from the <code>digest</code> package): <br><br>
+
+                  <code>library(digest); d0$workerid_hash <- substr(sapply(as.character(d0$workerid), digest, algo="md5", serialize=F), 1, 6)</code>
+
+                  <br><br> (the code above: (1) converts workerid into a character string, (2) uses <code>sapply()</code> to apply <code>digest()</code> vectorially, (3) takes the first 6 characters of the resulting string.)
                 </p>
               </div> 
             </div>
