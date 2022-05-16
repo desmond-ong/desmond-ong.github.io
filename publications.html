@@ -42,7 +42,7 @@
           </li>
 
 
-          <li class="nav-item" style="border-left: 1px solid silver;">
+          <li class="nav-item" style="border-left: 1px solid black;">
             <a class="nav-link" href="https://cascoglab.github.io">Lab Website</a>
           </li>
         </ul>
@@ -86,39 +86,8 @@
         </button>
         <br>
       </div>
-      <div class="col">
-        <!-- <button id="button-psych" class="btn btn-info btn-sm my-btn" type="button" data-toggle="button"> -->
-        <button id="button-psych" class="btn btn-info btn-sm my-btn" type="button">
-          <!-- Hide Psychology Publications -->
-          Show Only Psychology Publications
-        </button>
-        <br>
-        <!-- <button id="button-CS" class="btn btn-info btn-sm my-btn" type="button" data-toggle="button"> -->
-        <button id="button-CS" class="btn btn-info btn-sm my-btn" type="button">
-          <!-- Hide Computer Science Publications -->
-          Show Only Computer Science Publications
-        </button>
-        <br>
-        <!-- <button id="button-otherPubs" class="btn btn-info btn-sm my-btn" type="button" data-toggle="button"> -->
-          <button id="button-otherPubs" class="btn btn-info btn-sm my-btn" type="button">
-            <!-- Hide Other Publications -->
-            Show Only Publications in Other Fields
-          </button>
-      </div>
-      <!-- I've coded up the Senior-Authored buttons; will let them go live when I have more senior authored  -->
-      <div class="col">
-        <button id="button-representative" class="btn btn-warning btn-sm my-btn" type="button">
-          Show Most-Representative Publications
-        </button>
-        <button id="button-firstAuthored" class="btn btn-warning btn-sm my-btn" type="button">
-          Show Only First-Authored Publications
-        </button>
-        <button id="button-seniorAuthored" class="btn btn-warning btn-sm my-btn" type="button">
-          Show Only Senior-Authored Publications
-        </button>
-      </div> <!-- div col -->
-    </div> <!-- div row -->
-    <div class="row">
+    <!-- </div>
+    <div class="row"> -->
       <div class="col">
       <p>
       [ <a href="https://github.com/desmond-ong/"><img src="img/Octocat_small.png" style="height:16px; height:1rem" alt="Github"></a> ]
@@ -132,6 +101,73 @@
       </h3> -->
       </div>
     </div>
+
+
+    <div class="row">
+      <div class="col">
+        Publications by topic:
+
+        <br>
+        <button id="button-topic-AffCog" class="btn btn-light btn-sm my-btn" type="button">
+          Affective Cognition (and Social Cognition)
+        </button>
+        <br>
+        <button id="button-topic-EA" class="btn btn-light btn-sm my-btn" type="button">
+          Emotion Understanding and Empathic Accuracy
+        </button>
+        <br>
+        <button id="button-topic-AffComp" class="btn btn-light btn-sm my-btn" type="button">
+          Affective Computing
+        </button>
+        <br>
+        <button id="button-topic-interventions" class="btn btn-light btn-sm my-btn" type="button">
+          Interventions (for Empathy)
+        </button>
+        <br>
+        <button id="button-topic-SRL" class="btn btn-light btn-sm my-btn" type="button">
+          Self-Regulated Learning
+        </button>
+
+        <!-- Empathy in Social Networks -->
+        
+        
+        <br>
+      </div>
+
+
+
+      <div class="col">
+        Publications by publication venue:
+        <br>
+        <button id="button-psych" class="btn btn-info btn-sm my-btn" type="button">
+          Psychology / Cognitive Science
+        </button>
+        <br>
+        
+        <button id="button-CS" class="btn btn-info btn-sm my-btn" type="button">
+          Computer Science
+        </button>
+        <br>
+        
+        <button id="button-otherPubs" class="btn btn-info btn-sm my-btn" type="button">
+          Other Fields
+        </button>
+      </div>
+
+
+      <div class="col">
+        <button id="button-representative" class="btn btn-warning btn-sm my-btn" type="button">
+          Show Most Representative Publications
+        </button>
+        <button id="button-firstAuthored" class="btn btn-warning btn-sm my-btn" type="button">
+          Show Only First-Authored Publications
+        </button>
+        <button id="button-seniorAuthored" class="btn btn-warning btn-sm my-btn" type="button">
+          Show Only Senior-Authored Publications
+        </button>
+      </div> <!-- div col -->
+    </div> <!-- div row -->
+
 
     <div class="row">
       <div class="col">
@@ -173,7 +209,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-ongEEG">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-AffCog" id="pub-ongEEG">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -190,7 +226,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ongEEG">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-EA" id="pub-ongEEG">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -207,11 +243,11 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-houlihanCogSciCausalInference">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-AffCog" id="pub-houlihanCogSciCausalInference">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
-                  Houlihan, S. D.,  <b>Ong, D. C.</b>, Cusimano, M., &amp;  Saxe, R. (2022). Reasoning about the antecedents of emotions: Bayesian causal inference over an intuitive theory of mind. In <i>Proceedings of the 44th Annual Meeting of the Cognitive Science Society</i>.
+                  Houlihan, S. D., <b>Ong, D. C.</b>, Cusimano, M., &amp;  Saxe, R. (2022). Reasoning about the antecedents of emotions: Bayesian causal inference over an intuitive theory of mind. In <i>Proceedings of the 44th Annual Meeting of the Cognitive Science Society</i>.
                   </p> <p class="hangingindent-supplemental">
                     [ pdf ]
                 </p>
@@ -219,11 +255,11 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor" id="pub-teoEmotionDisplays">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-AffCog" id="pub-teoEmotionDisplays">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
-                  Teo, D., Ang, Z. Y., &amp;   <b>Ong, D. C.</b>, (2022). Modeling Causal Inference from Emotional Displays. In <i>Proceedings of the 44th Annual Meeting of the Cognitive Science Society</i>.
+                  Teo, D., Ang, Z. Y., &amp; <b>Ong, D. C.</b> (2022). Modeling Causal Inference from Emotional Displays. In <i>Proceedings of the 44th Annual Meeting of the Cognitive Science Society</i>.
                   </p> <p class="hangingindent-supplemental">
                     [ pdf ]
                 </p>
@@ -237,11 +273,11 @@
 
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-ongEEG">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-intervention" id="pub-ongEEG">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
-                  Weisz, E., Chen, P., <b>Ong, D. C.</b>, Carlson, R. W., Clark, M. D., & Zaki, J. (accepted). A Brief Intervention to Motivate Empathy among Middle School Students. <i>Journal of Experimental Psychology: General</i>.
+                  Weisz, E., Chen, P., <b>Ong, D. C.</b>, Carlson, R. W., Clark, M. D., &amp; Zaki, J. (accepted). A Brief Intervention to Motivate Empathy among Middle School Students. <i>Journal of Experimental Psychology: General</i>.
                   </p> <p class="hangingindent-supplemental">
                     [<!-- <a href="https://psyarxiv.com/"> -->
                       preprint
@@ -255,8 +291,7 @@
           </div>
 
 
-          <!-- <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-firstAuthor collapse-pub-seniorAuthor"> -->
-          <div>
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-firstAuthor collapse-pub-seniorAuthor collapse-pub-representative collapse-pub-topic-AffCog collapse-pub-topic-EA collapse-pub-topic-AffComp collapse-pub-topic-intervention collapse-pub-topic-SRL">
             <div class="my-card">
               <h5> <i> 2021 </i> </h5>
             </div>
@@ -265,7 +300,7 @@
 
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative" id="pub-ong2021ethics">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-AffComp" id="pub-ong2021ethics">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -283,7 +318,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2021nearmiss">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-ong2021nearmiss">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -303,7 +338,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative" id="pub-ong2019probprog">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-AffComp" id="pub-ong2019probprog">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -334,7 +369,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative" id="pub-ongTimeSeries">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-EA" id="pub-ongTimeSeries">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -365,7 +400,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-firstAuthor collapse-pub-psych" id="pub-EEP_AERA">
+          <div class="collapse collapse-pub-all collapse-pub-firstAuthor collapse-pub-psych collapse-pub-topic-SRL" id="pub-EEP_AERA">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -402,7 +437,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor" id="pub-nguyen2021explainable">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-nguyen2021explainable">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -420,7 +455,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor" id="pub-suresh2021lcl">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-suresh2021lcl">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -437,7 +472,7 @@
             </div>
           </div>
             
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor" id="pub-suresh2021kea">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-suresh2021kea">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -458,7 +493,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor" id="pub-teo2021causalInference">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-AffCog" id="pub-teo2021causalInference">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -479,7 +514,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-weiszCollegeInt">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-intervention" id="pub-weiszCollegeInt">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -519,7 +554,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor" id="pub-wuQuasiTABSA">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-wuQuasiTABSA">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -560,14 +595,13 @@
           </div>
 
 
-          <!-- <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-seniorAuthor"> -->
-          <div>
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-EA collapse-pub-topic-AffComp">
             <div class="my-card">
               <h5> <i> 2020 </i> </h5>
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-jospeSynchrony">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-EA" id="pub-jospeSynchrony">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -585,7 +619,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor" id="pub-wuLATTransformer">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-wuLATTransformer">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -611,7 +645,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor" id="pub-tanMDMM">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-tanMDMM">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -634,7 +668,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-firstAuthor collapse-pub-seniorAuthor">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-firstAuthor collapse-pub-seniorAuthor collapse-pub-representative collapse-pub-topic-AffCog collapse-pub-topic-AffComp">
             <div class="my-card">
               <h5> <i> 2019 </i> </h5>
             </div>
@@ -642,7 +676,7 @@
 
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative" id="pub-ong2019topiCS">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-AffCog" id="pub-ong2019topiCS">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -665,7 +699,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-asaba2019devPsych">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-asaba2019devPsych">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -697,7 +731,7 @@
 
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor" id="pub-tan2019cogSci">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-AffCog" id="pub-tan2019cogSci">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -725,7 +759,7 @@
 
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor" id="pub-tan2019OMGempathy">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-tan2019OMGempathy">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -740,7 +774,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor" id="pub-wuTransformers">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-wuTransformers">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -760,7 +794,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS" id="pub-xie2019hri">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-AffCog" id="pub-xie2019hri">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -782,14 +816,13 @@
             </div>
           </div>
 
-          <!-- <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor"> -->
-          <div>
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog">
             <div class="my-card">
               <h5> <i> 2018 </i> </h5>
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2018emotion">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-ong2018emotion">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -838,8 +871,7 @@
             </div>
           </div>
 
-          <!-- <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor"> -->
-          <div>
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-AffCog collapse-pub-topic-EA collapse-pub-topic-SRL">
             <div class="my-card">
               <h5> <i> 2017 and earlier </i> </h5>
             </div>
@@ -872,7 +904,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-chen2017SRUL">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-SRL" id="pub-chen2017SRUL">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1002,7 +1034,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2016bowling">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-ong2016bowling">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1024,7 +1056,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2016explanations">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-ong2016explanations">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1045,7 +1077,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-devlin2016hypomania">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-EA" id="pub-devlin2016hypomania">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1097,7 +1129,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative" id="pub-ong2015affCog">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-AffCog" id="pub-ong2015affCog">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1122,7 +1154,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2015nearMisses">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-ong2015nearMisses">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1175,7 +1207,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-devlin2014positiveEmotion">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-EA" id="pub-devlin2014positiveEmotion">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1331,7 +1363,7 @@
     <div class="row">
       <div class="col">
         <button id="button-theses" class="btn btn-info my-btn" type="button" data-toggle="collapse" data-target=".collapse-theses" aria-expanded="false" aria-controls="pub-theses">
-          Toggle Theses/Projects
+          Show/Hide Theses/Class Projects
         </button>
 
         <div class="collapse collapse-theses" id="pub-theses">
@@ -1404,7 +1436,7 @@
 
   <footer class="py-3 bg-light">
     <div class="container">
-      <p class="m-0 text-muted"> created by Desmond C. Ong using Bootstrap. Layout last updated November 2017. </p>
+      <p class="m-0"> created by Desmond C. Ong using Bootstrap. Layout last updated May 2022. </p>
     </div>
   </footer>
 
@@ -1435,6 +1467,23 @@
         case "senior":
         displayString = "Displaying Senior-Authored Publications";
         break;
+
+        case "topic-AffCog":
+        displayString = "Displaying Topic: Affective Cognition (and Social Cognition)";
+        break;
+        case "topic-EA":
+        displayString = "Displaying Topic: Emotion Understanding and Empathic Accuracy";
+        break;
+        case "topic-AffComp":
+        displayString = "Displaying Topic: Affective Computing";
+        break;
+        case "topic-intervention":
+        displayString = "Displaying Topic: Interventions (for Empathy)";
+        break;
+        case "topic-SRL":
+        displayString = "Displaying Topic: Self-Regulated Learning";
+        break;
+
         default:
         displayString = "Currently showing all publications";
       }
@@ -1477,9 +1526,10 @@
     });
 
     $('#button-psych').click(function () {
+      // $(".collapse-pub-CS").collapse('hide');
+      // $(".collapse-pub-others").collapse('hide');
+      $('.collapse-pub-notPsych').collapse('hide');
       $('.collapse-pub-psych').collapse('show');
-      $(".collapse-pub-CS").collapse('hide');
-      $(".collapse-pub-others").collapse('hide');
       updatePubDisplayStatusSpan("psych");
       // if($(this).hasClass("active")){
       //  $(this).html("Hide Psychology Publications");
@@ -1489,9 +1539,10 @@
     });
     $('#button-CS').click(function () {
       // $('.collapse-pub-CS').collapse('toggle');
-      $('.collapse-pub-psych').collapse('hide');
+      // $('.collapse-pub-psych').collapse('hide');
+      // $(".collapse-pub-others").collapse('hide');
+      $(".collapse-pub-notCS").collapse('hide');
       $(".collapse-pub-CS").collapse('show');
-      $(".collapse-pub-others").collapse('hide');
       updatePubDisplayStatusSpan("CS");
      // if($(this).hasClass("active")){
      //  $(this).html("Hide Computer Science Publications");
@@ -1501,8 +1552,9 @@
     });
     $('#button-otherPubs').click(function () {
       // $('.collapse-pub-others').collapse('toggle');
-      $('.collapse-pub-psych').collapse('hide');
-      $(".collapse-pub-CS").collapse('hide');
+      // $('.collapse-pub-psych').collapse('hide');
+      // $(".collapse-pub-CS").collapse('hide');
+      $(".collapse-pub-notOthers").collapse('hide');
       $(".collapse-pub-others").collapse('show');
       updatePubDisplayStatusSpan("others");
       // if($(this).hasClass("active")){
@@ -1527,7 +1579,42 @@
       updatePubDisplayStatusSpan("senior");
     });
 
+    $('#button-topic-AffCog').click(function () {
+      $(".collapse-pub-topic-notAffCog").collapse('hide');
+      $(".collapse-pub-topic-AffCog").collapse('show');
+      updatePubDisplayStatusSpan("topic-AffCog");
+    });
+    $('#button-topic-EA').click(function () {
+      $(".collapse-pub-topic-notEA").collapse('hide');
+      $(".collapse-pub-topic-EA").collapse('show');
+      updatePubDisplayStatusSpan("topic-EA");
+    });
+    $('#button-topic-AffComp').click(function () {
+      $(".collapse-pub-topic-notAffComp").collapse('hide');
+      $(".collapse-pub-topic-AffComp").collapse('show');
+      updatePubDisplayStatusSpan("topic-AffComp");
+    });
+    $('#button-topic-interventions').click(function () {
+      $(".collapse-pub-topic-notIntervention").collapse('hide');
+      $(".collapse-pub-topic-intervention").collapse('show');
+      updatePubDisplayStatusSpan("topic-intervention");
+    });
+    $('#button-topic-SRL').click(function () {
+      $(".collapse-pub-topic-notSRL").collapse('hide');
+      $(".collapse-pub-topic-SRL").collapse('show');
+      updatePubDisplayStatusSpan("topic-SRL");
+    });
+
     $(".collapse-pub-all").each(function(){
+      if(!$(this).hasClass("collapse-pub-psych")) {
+        $(this).addClass("collapse-pub-notPsych");
+      }
+      if(!$(this).hasClass("collapse-pub-CS")) {
+        $(this).addClass("collapse-pub-notCS");
+      }
+      if(!$(this).hasClass("collapse-pub-others")) {
+        $(this).addClass("collapse-pub-notOthers");
+      }
       if(!$(this).hasClass("collapse-pub-firstAuthor")) {
         $(this).addClass("collapse-pub-notFirstAuthor");
       }
@@ -1537,10 +1624,27 @@
       if(!$(this).hasClass("collapse-pub-representative")) {
         $(this).addClass("collapse-pub-notRepresentative");
       }
+
+      if(!$(this).hasClass("collapse-pub-topic-AffCog")) {
+        $(this).addClass("collapse-pub-topic-notAffCog");
+      }
+      if(!$(this).hasClass("collapse-pub-topic-EA")) {
+        $(this).addClass("collapse-pub-topic-notEA");
+      }
+      if(!$(this).hasClass("collapse-pub-topic-AffComp")) {
+        $(this).addClass("collapse-pub-topic-notAffComp");
+      }
+      if(!$(this).hasClass("collapse-pub-topic-intervention")) {
+        $(this).addClass("collapse-pub-topic-notIntervention");
+      }
+      if(!$(this).hasClass("collapse-pub-topic-SRL")) {
+        $(this).addClass("collapse-pub-topic-notSRL");
+      }
+      
     });
 
     $(".collapse-pub-all").collapse('show');
-    $(".collapse-theses").collapse('show');
+    $(".collapse-theses").collapse('hide');
 
   });
   </script>
