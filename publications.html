@@ -108,16 +108,61 @@
       <div class="col">
         Publications by topic:
 
-        <br>
-        <button id="button-topic-AffCog" class="btn btn-light btn-sm my-btn" type="button">
-          Affective Cognition (and Social Cognition)
+        <br>  
+        <!-- btn-sm  -->
+        <button id="button-topic-affCogBroad" class="btn btn-light my-btn" type="button">
+          Affective Cognition
         </button>
-        <br>
-        <button id="button-topic-EA" class="btn btn-light btn-sm my-btn" type="button">
-          Emotion Understanding and Empathic Accuracy
+        <ul>
+          <item>
+            <button id="button-topic-affCog" class="btn btn-light btn-sm my-btn" type="button">
+              Modeling Affective Cognition
+            </button>
+
+            <button id="button-topic-appraisal" class="btn btn-light btn-sm my-btn" type="button">
+              Appraisals and Emotions
+            </button>
+
+            <button id="button-topic-socCog" class="btn btn-light btn-sm my-btn" type="button">
+              (Emotion-Adjacent) Social Cognition
+            </button>
+
+
+          </item>
+        </ul>
+
+        <button id="button-topic-empathy" class="btn btn-light my-btn" type="button">
+          Empathy
         </button>
-        <br>
-        <button id="button-topic-AffComp" class="btn btn-light btn-sm my-btn" type="button">
+
+        <ul>
+          <item>
+          <button id="button-topic-EA" class="btn btn-light btn-sm my-btn" type="button">
+            Empathic Accuracy
+          </button>
+          </item>
+          
+          <item>
+          <button id="button-topic-LLMpathy" class="btn btn-light btn-sm my-btn" type="button">
+            LLMpathy (AI-generated Empathy)
+          </button>
+          </item>
+          
+          <item>
+          <button id="button-topic-empathyIntervention" class="btn btn-light btn-sm my-btn" type="button">
+            Empathy Interventions
+          </button>
+          </item>
+          
+          <item>
+          <button id="button-topic-empathyOther" class="btn btn-light btn-sm my-btn" type="button">
+            Other Empathy-related
+          </button>
+          </item>
+        </ul>
+          
+        <!-- <br> -->
+        <button id="button-topic-affComp" class="btn btn-light btn-sm my-btn" type="button">
           Affective Computing
         </button>
         <br>
@@ -125,45 +170,46 @@
           Using Large Language Models in Psychology
         </button>
         <br>
-        <button id="button-topic-interventions" class="btn btn-light btn-sm my-btn" type="button">
-          Interventions (for Empathy)
-        </button>
-        <br>
         <button id="button-topic-SRL" class="btn btn-light btn-sm my-btn" type="button">
           Self-Regulated Learning
         </button>
         <br>
+        <button id="button-topic-misc" class="btn btn-light btn-sm my-btn" type="button">
+          Miscellaneous
+        </button>
+
+        <br>
       </div>
 
 
-
+      <!--  -->
       <div class="col">
-        Publications by discipline:
+        Publications by discipline (by outlet):
         <br>
-        <button id="button-psych" class="btn btn-info btn-sm my-btn" type="button">
+        <button id="button-psych" class="btn btn-info btn-block btn-sm my-btn" type="button">
           Psychology / Cognitive Science
         </button>
-        <br>
+        <!-- <br> -->
         
-        <button id="button-CS" class="btn btn-info btn-sm my-btn" type="button">
+        <button id="button-CS" class="btn btn-info btn-block btn-sm my-btn" type="button">
           Computer Science
         </button>
-        <br>
+        <!-- <br> -->
         
-        <button id="button-otherPubs" class="btn btn-info btn-sm my-btn" type="button">
+        <button id="button-otherPubs" class="btn btn-info btn-block btn-sm my-btn" type="button">
           Other Fields
         </button>
       </div>
 
 
       <div class="col">
-        <button id="button-representative" class="btn btn-warning btn-sm my-btn" type="button">
+        <button id="button-representative" class="btn btn-warning btn-block btn-sm my-btn" type="button">
           Show Most Representative Publications
         </button>
-        <button id="button-firstAuthored" class="btn btn-warning btn-sm my-btn" type="button">
+        <button id="button-firstAuthored" class="btn btn-warning btn-block btn-sm my-btn" type="button">
           Show Only First-Authored Publications
         </button>
-        <button id="button-seniorAuthored" class="btn btn-warning btn-sm my-btn" type="button">
+        <button id="button-seniorAuthored" class="btn btn-warning btn-block btn-sm my-btn" type="button">
           Show Only Senior-Authored Publications
         </button>
       </div> <!-- div col -->
@@ -187,14 +233,18 @@
           <div id="pub-header-under-review" 
           class="collapse collapse-pub-all collapse-pub-psych collapse-pub-CS 
           collapse-pub-firstAuthor collapse-pub-seniorAuthor
-          collapse-pub-topic-AffCog collapse-pub-topic-EA collapse-pub-topic-AffComp collapse-pub-topic-LLM">
+          collapse-pub-topic-affCog
+          collapse-pub-topic-appraisal
+          collapse-pub-topic-EA
+          collapse-pub-topic-LLMpathy 
+          collapse-pub-topic-affComp ">
 
             <h4> Pre-prints and Manuscripts Under Review </h4>
           </div>
           <ul>
 
 
-            <div class="collapse collapse-pub-all collapse-pub-seniorAuthor collapse-pub-psych collapse-pub-topic-EA collapse-pub-topic-LLM" id="pub-hadjiandreouLLMpathy">
+            <div class="collapse collapse-pub-all collapse-pub-seniorAuthor collapse-pub-psych collapse-pub-topic-LLMpathy" id="pub-hadjiandreouLLMpathy">
               <div class="my-card">
                 <li>
                   <p class="hangingindent">
@@ -208,7 +258,7 @@
               </div>
             </div>
 
-            <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-LLM" id="pub-zhouSubjectivityAppraisal">
+            <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-appraisal" id="pub-zhouSubjectivityAppraisal">
               <div class="my-card">
                 <li>
                   <p class="hangingindent">
@@ -222,7 +272,7 @@
               </div>
             </div>
 
-            <div class="collapse collapse-pub-all collapse-pub-seniorAuthor collapse-pub-CS collapse-pub-topic-LLM" id="pub-mooreTherapyEval">
+            <div class="collapse collapse-pub-all collapse-pub-seniorAuthor collapse-pub-CS collapse-pub-topic-LLMpathy" id="pub-mooreTherapyEval">
               <div class="my-card">
                 <li>
                   <p class="hangingindent">
@@ -239,7 +289,7 @@
             </div>
 
 
-            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-CS collapse-pub-topic-AffCog" id="pub-gandhiEmoTom">
+            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-CS collapse-pub-topic-affCog" id="pub-gandhiEmoTom">
               <div class="my-card">
                 <li>
                   <p class="hangingindent">
@@ -271,7 +321,7 @@
               </div>
             </div>
 
-            <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-AffComp collapse-pub-seniorAuthor" id="pub-sureshURFER">
+            <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-affComp collapse-pub-seniorAuthor" id="pub-sureshURFER">
               <div class="my-card">
                 <li>
                   <p class="hangingindent">
@@ -285,7 +335,7 @@
               </div>
             </div>
 
-            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-AffCog collapse-pub-seniorAuthor" id="pub-teoURInstrumentalCausalLearning">
+            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-socCog collapse-pub-seniorAuthor" id="pub-teoURInstrumentalCausalLearning">
               <div class="my-card">
                 <li>
                   <p class="hangingindent">
@@ -323,7 +373,26 @@
             </div>
           </div> -->
 
-            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-AffCog" id="pub-jiangVEM">
+
+            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-LLMpathy" id="pub-rubinLLMpathy">
+              <div class="my-card">
+                <li>
+                  <p class="hangingindent">
+                    Rubin, M., Li, J., Zimmerman, F., <b>Ong, D. C.</b>, Goldenberg, A., &amp; Perry, A. (in press). Comparing the Value of Perceived Human versus AI-Generated Empathy. <i>Nature Human Behaviour</i>.
+                    </p> <p class="hangingindent-supplemental">
+                      [<a href="https://osf.io/preprints/osf/ng97s_v2"> 
+                        preprint
+                      </a>] 
+                  </p>
+                </li>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-affCog" id="pub-jiangVEM">
               <div class="my-card">
                 <li>
                   <p class="hangingindent">
@@ -343,7 +412,7 @@
                 <li>
                   <p class="hangingindent">
                     Reddan, M., <b>Ong, D. C.</b> , Wager, T. D., Mattek, S., Kahhale, I., &amp;  Zaki, J. (in press). Neural signatures of emotional intent and inference align during social consensus. <i>Nature Communications</i>.
-                    <!-- </p> <p class="hangingindent-supplemental"> -->
+                    </p> <p class="hangingindent-supplemental">
                       [<a href="https://www.researchsquare.com/article/rs-3487248/v1"> 
                         preprint
                       </a>] 
@@ -407,7 +476,7 @@
             </div>
 
 
-            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-AffCog collapse-pub-seniorAuthor collapse-pub-representative" id="pub-doanDevAppr">
+            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-appraisal collapse-pub-seniorAuthor collapse-pub-representative" id="pub-doanDevAppr">
               <div class="my-card">
                 <li>
                   <p class="hangingindent">
@@ -431,14 +500,20 @@
 
           <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-firstAuthor collapse-pub-seniorAuthor 
           collapse-pub-representative
-          collapse-pub-topic-AffCog collapse-pub-topic-EA collapse-pub-topic-AffComp collapse-pub-topic-LLM">
+          collapse-pub-topic-affCog
+          collapse-pub-topic-appraisal 
+          collapse-pub-topic-empathyOther
+          collapse-pub-topic-EA 
+          collapse-pub-topic-LLMpathy
+          collapse-pub-topic-affComp collapse-pub-topic-LLM
+          collapse-pub-topic-misc">
             <div class="my-card">
               <br>
               <h5> <i> 2024 </i> </h5>
             </div>
           </div>
 
-            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-AffCog collapse-pub-seniorAuthor collapse-pub-representative" id="pub-yeoMetaAnalysis">
+            <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-appraisal collapse-pub-seniorAuthor collapse-pub-representative" id="pub-yeoMetaAnalysis">
               <div class="my-card">
                 <li>
                   <p class="hangingindent">
@@ -471,7 +546,7 @@
 
 
 
-            <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-LLM collapse-pub-seniorAuthor collapse-pub-representative" id="pub-zhanLLMReappraisal">
+            <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-LLMpathy collapse-pub-seniorAuthor collapse-pub-representative" id="pub-zhanLLMReappraisal">
               <div class="my-card">
                 <li>
                   <p class="hangingindent">
@@ -491,7 +566,7 @@
               </div>
             </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-LLM collapse-pub-seniorAuthor collapse-pub-representative" id="pub-leeLLMEmpathy">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-LLMpathy collapse-pub-seniorAuthor collapse-pub-representative" id="pub-leeLLMEmpathy">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -523,7 +598,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2024BBS">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-misc" id="pub-ong2024BBS">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -540,7 +615,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-AffCog collapse-pub-representative" id="pub-goelIntegration">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-affCog collapse-pub-representative" id="pub-goelIntegration">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -554,7 +629,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor" id="pub-gueoguievaLEIN">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-empathyOther" id="pub-gueoguievaLEIN">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -587,7 +662,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-AffCog" id="pub-kahhaleEmpathyEarlyLifeAdversity">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-EA" id="pub-kahhaleEmpathyEarlyLifeAdversity">
               <div class="my-card">
                 <li>
                   <p class="hangingindent">
@@ -606,7 +681,7 @@
               </div>
             </div>
 
-         <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-AffComp" id="pub-suhDigitalMentalHealth">
+         <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-affComp" id="pub-suhDigitalMentalHealth">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -620,7 +695,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-topic-LLM">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-topic-LLM collapse-pub-topic-LLMpathy">
             <div class="my-card">
               <br>
               <h5> <i> 2023 </i> </h5>
@@ -647,7 +722,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-LLM" id="pub-zhanAppraisalLLM">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-LLMpathy" id="pub-zhanAppraisalLLM">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -664,7 +739,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-firstAuthor collapse-pub-seniorAuthor collapse-pub-topic-AffCog collapse-pub-topic-EA collapse-pub-topic-AffComp collapse-pub-topic-intervention collapse-pub-topic-SRL">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-firstAuthor collapse-pub-seniorAuthor collapse-pub-topic-affCog collapse-pub-topic-EA collapse-pub-topic-affComp collapse-pub-topic-empathyIntervention collapse-pub-topic-SRL">
             <div class="my-card">
               <br>
               <h5> <i> 2022 </i> </h5>
@@ -712,7 +787,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-AffCog" id="pub-goldenbergAmplification">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-affCog" id="pub-goldenbergAmplification">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -732,7 +807,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-AffCog" id="pub-houlihanCogSciCausalInference">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-affCog" id="pub-houlihanCogSciCausalInference">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -761,7 +836,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-AffComp collapse-pub-seniorAuthor" id="pub-sureshPositiveMatching">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-affComp collapse-pub-seniorAuthor" id="pub-sureshPositiveMatching">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -778,7 +853,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-AffCog" id="pub-teoEmotionDisplays">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-affCog" id="pub-teoEmotionDisplays">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -793,7 +868,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-intervention" id="pub-weiszEmpathyMiddleSchool">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-empathyIntervention" id="pub-weiszEmpathyMiddleSchool">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -814,7 +889,8 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-firstAuthor collapse-pub-seniorAuthor collapse-pub-representative collapse-pub-topic-AffCog collapse-pub-topic-EA collapse-pub-topic-AffComp collapse-pub-topic-intervention collapse-pub-topic-SRL">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-firstAuthor collapse-pub-seniorAuthor collapse-pub-representative collapse-pub-topic-affCog 
+          collapse-pub-topic-socCog collapse-pub-topic-EA collapse-pub-topic-affComp collapse-pub-topic-empathyIntervention collapse-pub-topic-SRL collapse-pub-topic-misc">
             <div class="my-card">
               <br>
               <h5> <i> 2021 </i> </h5>
@@ -824,7 +900,7 @@
 
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-AffComp" id="pub-ong2021ethics">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-affComp" id="pub-ong2021ethics">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -850,7 +926,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-ong2021nearmiss">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-affCog" id="pub-ong2021nearmiss">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -870,7 +946,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-AffComp" id="pub-ong2019probprog">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-affComp" id="pub-ong2019probprog">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -962,7 +1038,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor" id="pub-laiHAIHealthcare">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-misc" id="pub-laiHAIHealthcare">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -977,7 +1053,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-nguyen2021explainable">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-affComp" id="pub-nguyen2021explainable">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -995,7 +1071,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-suresh2021lcl">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-affComp" id="pub-suresh2021lcl">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1012,7 +1088,7 @@
             </div>
           </div>
             
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-suresh2021kea">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-affComp" id="pub-suresh2021kea">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1033,7 +1109,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-AffCog" id="pub-teo2021causalInference">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-socCog" id="pub-teo2021causalInference">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1054,7 +1130,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-intervention" id="pub-weiszEmpathyCollege">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-empathyIntervention" id="pub-weiszEmpathyCollege">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1074,7 +1150,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor" id="pub-wuRSAColor">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-misc" id="pub-wuRSAColor">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1094,7 +1170,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-wuQuasiTABSA">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-affComp" id="pub-wuQuasiTABSA">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1117,7 +1193,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-CS" id="pub-wu2021reascan">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-misc" id="pub-wu2021reascan">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1135,7 +1211,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-EA collapse-pub-topic-AffComp">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-EA collapse-pub-topic-affComp">
             <div class="my-card">
               <br>
               <h5> <i> 2020 </i> </h5>
@@ -1160,7 +1236,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-wuLATTransformer">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-affComp" id="pub-wuLATTransformer">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1186,7 +1262,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-tanMDMM">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-affComp" id="pub-tanMDMM">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1209,7 +1285,8 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-firstAuthor collapse-pub-seniorAuthor collapse-pub-representative collapse-pub-topic-AffCog collapse-pub-topic-AffComp">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-psych collapse-pub-firstAuthor collapse-pub-seniorAuthor collapse-pub-representative collapse-pub-topic-affCog 
+          collapse-pub-topic-socCog collapse-pub-topic-affComp">
             <div class="my-card">
               <br>
               <h5> <i> 2019 </i> </h5>
@@ -1218,7 +1295,7 @@
 
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-AffCog" id="pub-ong2019topiCS">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-affCog" id="pub-ong2019topiCS">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1241,7 +1318,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-asaba2019devPsych">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-affCog" id="pub-asaba2019devPsych">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1273,7 +1350,7 @@
 
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-AffCog" id="pub-tan2019cogSci">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-seniorAuthor collapse-pub-topic-socCog" id="pub-tan2019cogSci">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1301,7 +1378,7 @@
 
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-tan2019OMGempathy">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-affComp" id="pub-tan2019OMGempathy">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1316,7 +1393,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-AffComp" id="pub-wuTransformers">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-seniorAuthor collapse-pub-topic-affComp" id="pub-wuTransformers">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1336,7 +1413,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-AffCog" id="pub-xie2019hri">
+          <div class="collapse collapse-pub-all collapse-pub-CS collapse-pub-topic-socCog" id="pub-xie2019hri">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1358,14 +1435,14 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-affCog collapse-pub-topic-empathyOther">
             <div class="my-card">
               <br>
               <h5> <i> 2018 </i> </h5>
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-ong2018emotion">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-affCog" id="pub-ong2018emotion">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1386,7 +1463,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-williamsJPSP">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-empathyOther" id="pub-williamsJPSP">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1414,14 +1491,17 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-AffCog collapse-pub-topic-EA collapse-pub-topic-SRL">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-affCog 
+          collapse-pub-topic-socCog
+          collapse-pub-topic-EA collapse-pub-topic-SRL collapse-pub-topic-misc 
+          collapse-pub-topic-empathyOther">
             <div class="my-card">
               <br>
               <h5> <i> 2017 and earlier </i> </h5>
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-ong2017bipolarTrust">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-misc" id="pub-ong2017bipolarTrust">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1541,7 +1621,7 @@
             </div>
           </div>
 
-          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-morelli2017networks">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-empathyOther" id="pub-morelli2017networks">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1578,7 +1658,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-ong2016bowling">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-affCog" id="pub-ong2016bowling">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1600,7 +1680,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-ong2016explanations">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-affCog" id="pub-ong2016explanations">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1644,7 +1724,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych" id="pub-nook2016prosocial">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-empathyOther" id="pub-nook2016prosocial">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1673,7 +1753,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-AffCog" id="pub-ong2015affCog">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-representative collapse-pub-topic-affCog" id="pub-ong2015affCog">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1698,7 +1778,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-AffCog" id="pub-ong2015nearMisses">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor collapse-pub-topic-affCog" id="pub-ong2015nearMisses">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1718,7 +1798,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-firstAuthor" id="pub-phillips2015KTE">
+          <div class="collapse collapse-pub-all collapse-pub-psych collapse-pub-topic-socCog collapse-pub-firstAuthor" id="pub-phillips2015KTE">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1806,7 +1886,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-others" id="pub-leahy2013PRL">
+          <div class="collapse collapse-pub-all collapse-pub-topic-misc collapse-pub-others" id="pub-leahy2013PRL">
             <div class="my-card">
               <br>
               <b> Pre-2014; Previous work in physics and optics </b>
@@ -1834,7 +1914,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-others collapse-pub-firstAuthor" id="pub-ong2012speckle">
+          <div class="collapse collapse-pub-all collapse-pub-topic-misc collapse-pub-others collapse-pub-firstAuthor" id="pub-ong2012speckle">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1856,7 +1936,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-others" id="pub-gerbode2010PRE">
+          <div class="collapse collapse-pub-all collapse-pub-topic-misc collapse-pub-others" id="pub-gerbode2010PRE">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -1878,7 +1958,7 @@
           </div>
 
 
-          <div class="collapse collapse-pub-all collapse-pub-others" id="pub-gerbode2010PRL">
+          <div class="collapse collapse-pub-all collapse-pub-topic-misc collapse-pub-others" id="pub-gerbode2010PRL">
             <div class="my-card">
               <li>
                 <p class="hangingindent">
@@ -2012,23 +2092,44 @@
         displayString = "Displaying Senior-Authored Publications";
         break;
 
-        case "topic-AffCog":
-        displayString = "Displaying Topic: Affective Cognition (and Social Cognition)";
+        case "topic-affCogBroad":
+        displayString = "Displaying Mega-Topic: Affective Cognition";
         break;
-        case "topic-EA":
-        displayString = "Displaying Topic: Emotion Understanding and Empathic Accuracy";
+          case "topic-affCog":
+          displayString = "Displaying Sub-Topic: Modeling Affective Cognition";
+          break;
+          case "topic-appraisal":
+          displayString = "Displaying Sub-Topic: Appraisals";
+          break;
+          case "topic-socCog":
+          displayString = "Displaying Sub-Topic: Emotion-Adjacent Social Cognition";
+          break;
+        case "topic-empathy":
+        displayString = "Displaying Mega-Topic: Empathy";
         break;
-        case "topic-AffComp":
+          case "topic-EA":
+          displayString = "Displaying Sub-Topic: Empathic Accuracy";
+          break;
+          case "topic-LLMpathy":
+          displayString = "Displaying Sub-Topic: AI-generated empathy (LLMpathy)";
+          break;
+          case "topic-empathyIntervention":
+          displayString = "Displaying Sub-Topic: Empathy Interventions";
+          break;
+          case "topic-empathyOther":
+          displayString = "Displaying Sub-Topic: Other Empathy-related ";
+          break;
+        case "topic-affComp":
         displayString = "Displaying Topic: Affective Computing";
         break;
         case "topic-LLM":
-        displayString = "Displaying Topic: Large Language Models";
-        break;
-        case "topic-intervention":
-        displayString = "Displaying Topic: Interventions (for Empathy)";
+        displayString = "Displaying Topic: Large Language Models (others)";
         break;
         case "topic-SRL":
         displayString = "Displaying Topic: Self-Regulated Learning";
+        break;
+        case "topic-misc":
+        displayString = "Displaying Miscallenous Topics";
         break;
 
         default:
@@ -2126,35 +2227,77 @@
       updatePubDisplayStatusSpan("senior");
     });
 
-    $('#button-topic-AffCog').click(function () {
+    $('#button-topic-affCogBroad').click(function () {
+      $(".collapse-pub-topic-notAffCogBroad").collapse('hide');
+      $(".collapse-pub-topic-affCogBroad").collapse('show');
+      updatePubDisplayStatusSpan("topic-affCogBroad");
+    });
+
+    $('#button-topic-affCog').click(function () {
       $(".collapse-pub-topic-notAffCog").collapse('hide');
-      $(".collapse-pub-topic-AffCog").collapse('show');
-      updatePubDisplayStatusSpan("topic-AffCog");
+      $(".collapse-pub-topic-affCog").collapse('show');
+      updatePubDisplayStatusSpan("topic-affCog");
+    });
+
+    $('#button-topic-appraisal').click(function () {
+      $(".collapse-pub-topic-notAppraisal").collapse('hide');
+      $(".collapse-pub-topic-appraisal").collapse('show');
+      updatePubDisplayStatusSpan("topic-appraisal");
+    });
+
+    $('#button-topic-socCog').click(function () {
+      $(".collapse-pub-topic-notSocCog").collapse('hide');
+      $(".collapse-pub-topic-socCog").collapse('show');
+      updatePubDisplayStatusSpan("topic-socCog");
+    });
+
+    $('#button-topic-empathy').click(function () {
+      $(".collapse-pub-topic-notEmpathy").collapse('hide');
+      $(".collapse-pub-topic-empathy").collapse('show');
+      updatePubDisplayStatusSpan("topic-empathy");
     });
     $('#button-topic-EA').click(function () {
       $(".collapse-pub-topic-notEA").collapse('hide');
       $(".collapse-pub-topic-EA").collapse('show');
       updatePubDisplayStatusSpan("topic-EA");
     });
-    $('#button-topic-AffComp').click(function () {
+    $('#button-topic-LLMpathy').click(function () {
+      $(".collapse-pub-topic-notLLMpathy").collapse('hide');
+      $(".collapse-pub-topic-LLMpathy").collapse('show');
+      updatePubDisplayStatusSpan("topic-LLMpathy");
+    });
+    $('#button-topic-empathyIntervention').click(function () {
+      $(".collapse-pub-topic-notEmpathyIntervention").collapse('hide');
+      $(".collapse-pub-topic-empathyIntervention").collapse('show');
+      updatePubDisplayStatusSpan("topic-empathyIntervention");
+    });
+
+    $('#button-topic-empathyOther').click(function () {
+      $(".collapse-pub-topic-notEmpathyOther").collapse('hide');
+      $(".collapse-pub-topic-empathyOther").collapse('show');
+      updatePubDisplayStatusSpan("topic-empathyOther");
+    });
+
+    $('#button-topic-affComp').click(function () {
       $(".collapse-pub-topic-notAffComp").collapse('hide');
-      $(".collapse-pub-topic-AffComp").collapse('show');
-      updatePubDisplayStatusSpan("topic-AffComp");
+      $(".collapse-pub-topic-affComp").collapse('show');
+      updatePubDisplayStatusSpan("topic-affComp");
     });
     $('#button-topic-LLM').click(function () {
       $(".collapse-pub-topic-notLLM").collapse('hide');
       $(".collapse-pub-topic-LLM").collapse('show');
       updatePubDisplayStatusSpan("topic-LLM");
     });
-    $('#button-topic-interventions').click(function () {
-      $(".collapse-pub-topic-notIntervention").collapse('hide');
-      $(".collapse-pub-topic-intervention").collapse('show');
-      updatePubDisplayStatusSpan("topic-intervention");
-    });
     $('#button-topic-SRL').click(function () {
       $(".collapse-pub-topic-notSRL").collapse('hide');
       $(".collapse-pub-topic-SRL").collapse('show');
       updatePubDisplayStatusSpan("topic-SRL");
+    });
+
+    $('#button-topic-misc').click(function () {
+      $(".collapse-pub-topic-notMisc").collapse('hide');
+      $(".collapse-pub-topic-misc").collapse('show');
+      updatePubDisplayStatusSpan("topic-misc");
     });
 
     $(".collapse-pub-all").each(function(){
@@ -2177,23 +2320,74 @@
         $(this).addClass("collapse-pub-notRepresentative");
       }
 
-      if(!$(this).hasClass("collapse-pub-topic-AffCog")) {
+      
+
+
+
+
+
+      
+      // adding higher level topic header to sub-topics
+      if($(this).hasClass("collapse-pub-topic-affCog") ||
+        $(this).hasClass("collapse-pub-topic-appraisal") ||
+        $(this).hasClass("collapse-pub-topic-socCog")
+        ) {
+          $(this).addClass("collapse-pub-topic-affCogBroad");
+        }
+
+      if($(this).hasClass("collapse-pub-topic-EA") ||
+        $(this).hasClass("collapse-pub-topic-LLMpathy") ||
+        $(this).hasClass("collapse-pub-topic-empathyIntervention") ||
+        $(this).hasClass("collapse-pub-topic-empathyOther")
+        ) {
+          $(this).addClass("collapse-pub-topic-empathy");
+        }
+        
+
+      
+      if(!$(this).hasClass("collapse-pub-topic-affCog")) {
         $(this).addClass("collapse-pub-topic-notAffCog");
       }
+      if(!$(this).hasClass("collapse-pub-topic-appraisal")) {
+        $(this).addClass("collapse-pub-topic-notAppraisal");
+      }
+      if(!$(this).hasClass("collapse-pub-topic-socCog")) {
+        $(this).addClass("collapse-pub-topic-notSocCog");
+      }
+      if(!$(this).hasClass("collapse-pub-topic-affCogBroad")) {
+        $(this).addClass("collapse-pub-topic-notAffCogBroad");
+      }
+
+
       if(!$(this).hasClass("collapse-pub-topic-EA")) {
         $(this).addClass("collapse-pub-topic-notEA");
       }
-      if(!$(this).hasClass("collapse-pub-topic-AffComp")) {
+      if(!$(this).hasClass("collapse-pub-topic-LLMpathy")) {
+        $(this).addClass("collapse-pub-topic-notLLMpathy");
+      }
+      if(!$(this).hasClass("collapse-pub-topic-empathyIntervention")) {
+        $(this).addClass("collapse-pub-topic-notEmpathyIntervention");
+      }
+      if(!$(this).hasClass("collapse-pub-topic-empathyOther")) {
+        $(this).addClass("collapse-pub-topic-notEmpathyOther");
+      }
+
+      if(!$(this).hasClass("collapse-pub-topic-empathy")) {
+        $(this).addClass("collapse-pub-topic-notEmpathy");
+      }
+
+
+      if(!$(this).hasClass("collapse-pub-topic-affComp")) {
         $(this).addClass("collapse-pub-topic-notAffComp");
       }
       if(!$(this).hasClass("collapse-pub-topic-LLM")) {
         $(this).addClass("collapse-pub-topic-notLLM");
       }
-      if(!$(this).hasClass("collapse-pub-topic-intervention")) {
-        $(this).addClass("collapse-pub-topic-notIntervention");
-      }
       if(!$(this).hasClass("collapse-pub-topic-SRL")) {
         $(this).addClass("collapse-pub-topic-notSRL");
+      }
+      if(!$(this).hasClass("collapse-pub-topic-misc")) {
+        $(this).addClass("collapse-pub-topic-notMisc");
       }
       
     });
