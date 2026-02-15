@@ -1,293 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Personal Website">
-    <meta name="author" content="Desmond C. Ong">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Reproducible research and code resources - Desmond C. Ong">
+  <meta name="author" content="Desmond C. Ong">
 
-    <title>Others</title>
+  <title>Others | Desmond C. Ong</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- my modifications -->
-    <link href="css/mycss.css" rel="stylesheet">
-  </head>
+  <!-- Stylesheets -->
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-  <body>
+<body>
 
-    <!-- Top Navigation Bar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Desmond Ong</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <!-- <ul class="navbar-nav ml-auto"> -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="research.html">Research</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="publications.html">Publications</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="others.html">Others</a>
-            </li>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Desmond C. Ong</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <!-- <li><a href="speaking.html">Speaking</a></li> -->
+        <!-- <li><a href="teaching/index.html">Teaching</a></li> -->
+        <li><a href="others.html" class="active">Others</a></li>
+        <li><a href="mailto:desmond.ong@utexas.edu" class="nav-cta">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Hero -->
+  <section class="section">
+    <div class="container">
+      <h1 style="text-align: center; margin-bottom: 1rem;">Reproducible Research & Code</h1>
+      <p style="text-align: center; color: var(--text-light); max-width: 700px; margin: 0 auto;">
+        Open science resources, analysis code, and useful tools for behavioral data science.
+      </p>
+    </div>
+  </section>
 
-            <!-- <li class="nav-item" style="border-left: 1px solid black;"> -->
-              <!-- <a class="nav-link" href="https://cascoglab.github.io">Lab Website</a> -->
-              <!-- <a class="nav-link" href="https://cascoglab.psy.utexas.edu">Lab Website</a> -->
-            <!-- </li> -->
-          </ul>
-        </div> <!-- End of div class="collapse navbar-collapse" -->
-      </div> <!-- End of div class="container" -->
-    </nav> <!-- End of Navigation Bar -->
+  <!-- Reproducible Data Analysis Examples -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Reproducible Data Analysis Examples</h2>
+      </div>
 
-      <!-- Begin page content -->
-      <div class="container">
+      <p style="margin-bottom: 2rem;">
+        I am an advocate of reproducible data analysis practices, and support the publication of the data, analysis code, and research materials that contribute to a scientific finding. 
+        A really handy tool is <a href="https://rmarkdown.rstudio.com/">R Markdown</a>,, which allows me to do all my analyses in R and then format the output (including programatically-generated tables and numbers!) via Markdown into a nice HTML or PDF document.
+        <!-- To this end, I have hosted several of my analysis scripts on the web (via GitHub Pages), and have deposited my data on open repositories like the Open Science Framework (OSF). -->
+        <br>
+        Many journals now require uploading data and analysis code to some online repository like OSF or ICPSR. One issue is that these repositories are functionally simple: they just offer (persistent, time-stamped) storage for data and code, but do not offer any interactivity. What I prefer to do is to use GitHub Pages to render the output HTML file that accompany my projects (often written in R Markdown). This results in a visually appealing---and reproducible---presentation of the main results. 
+      </p>
 
-        <div class="row">
-          <h4 class="my-3">
-                Reproducible Data Analysis Examples
-          </h4>
+      <div class="cards">
+        <div class="card">
+          <h3>Meta-analysis: Appraisals and Emotions</h3>
+          <p>Interactive R Shiny application for exploring the meta-analytic data from Yeo & Ong (2024)</p>
+          <a href="https://desmond-ong.shinyapps.io/meta-analysis-code/" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">View R Shiny App →</a>
+          <a href="https://github.com/desmond-ong/appraisal-meta-analysis" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">GitHub →</a>
+          <br>
+          (note: this R shiny applet is on a free tier, usage may be limited)
+          <br><br>
+          <small>
+            Yeo, G. & <strong>Ong, D. C.</strong> (2024). Associations Between Cognitive Appraisals and Emotions: A Meta-Analytic Review. <i>Psychological Bulletin</i>, 150(12), 1440–1471.
+          </small>
         </div>
 
-        <div class="row">
-          <div class="col-lg">
-            <p>
-            I'm a big fan of having reproducible workflows, especially when it comes to reproducible data analysis for my research projects. A really handy tool is R Markdown, which allows me to do all my analyses in R and then format the output (including programatically-generated tables and numbers!) via Markdown into a nice HTML or PDF document.
-            <br><br>
-            Many journals now require uploading data and analysis code to some online repository like OSF or ICPSR. One issue is that these repositories are functionally simple: they just offer (persistent, time-stamped) storage for data and code, but do not offer any interactivity. What I prefer to do is, in addition, to use GitHub Pages to render the output HTML file that accompany my projects. This results in a visually appealing (and reproducible) presentation of the main results. 
-            <br><br>
-            Below I list some examples:
-            </p>
-
-            <ul>
-              <li>
-                [<a href="https://desmond-ong.shinyapps.io/meta-analysis-code/">
-                        R Shiny applet
-                      </a> ] <a href="https://github.com/desmond-ong/appraisal-meta-analysis">
-                        GitHub repository
-                      </a> for: 
-                      Yeo, G. &amp; Ong, D. C. (2024). Associations Between Cognitive Appraisals and Emotions: A Meta-Analytic Review. <i>Psychological Bulletin</i>, 150(12), 1440–1471.
-                      <br>
-                       (note: this R shiny applet is on a free tier, usage may be limited)
-              </li>
-              <li>
-                [ <a href="https://desmond-ong.github.io/ControlledTrialsToClassrooms/ECoach_analysis.html">HTML</a> ] <a href="https://osf.io/6qej7">OSF Repository</a> for: Chen et al. (2022) Real-World Effectiveness of a Social-Psychological Intervention Translated from Controlled Trials to Classrooms. <i>npj Science of Learning</i>.
-              </li><li>
-                [ <a href="https://desmond-ong.github.io/resourceUse/EEP_resourceUse_public_cleaned.html">HTML</a> ] <a href="https://www.openicpsr.org/openicpsr/project/127301/version/V1/view">ICPSR Repository</a> [or <a href="https://desmond-ong.github.io/resourceUse/">GitHub</a>] for: Chen, P.*, Ong, D. C.*, Ng, J., &amp; Coppola, B. P. (2021). Explore, Exploit, and Prune in the Classroom: Strategic Resource Management Behaviors Predict Performance. <i>AERA Open</i>.
-              </li><li>
-                [ <a href="https://desmond-ong.github.io/pubs/2017_PsychScience/final_analysis.html">HTML</a> ] <a href="http://osf.io/5fr3d">OSF Repository</a> for: Chen, P., Chavez, O., Ong, D. C., &amp; Gunderson, B. (2017). Strategic Resource Use for Learning: A Self-administered Intervention that Guides Effective Resource Use Enhances Academic Performance. <i>Psychological Science</i>.
-              </li>
-            <!-- </ul>
-            
-          <p> Other examples: </p>
-            <ul> -->
-            <br><br>
-              <li>
-                [ <a href="https://desmond-ong.github.io/emotionPsychDistance/psychDistance_analysis.html">HTML</a> ] 
-                <a href="https://desmond-ong.github.io/emotionPsychDistance/">Github Repository</a> for: Ong, Goodman, &amp; Zaki (2018). Happier than thou? A self-enhancement bias in emotion attribution. <i>Emotion</i>. 
-              </li><li>
-                [ <a href="https://desmond-ong.github.io/CooperationInMoodDisorders/Analysis/TrustGameAnalysis.html">HTML</a> ] 
-                <a href="https://desmond-ong.github.io/CooperationInMoodDisorders/">Github Repository</a> for: Ong, Zaki, &amp; Gruber (2017). Increased cooperative behavior across remitted bipolar I disorder and major depression: Insights utilizing a behavioral economic trust game. <i>Journal of Abnormal Psychology</i>.
-              </li><li>
-                [ <a href="https://desmond-ong.github.io/affCog/affCog_analysis.html">HTML</a> ] 
-                <a href="https://desmond-ong.github.io/affCog/">Github Repository</a> for: Ong, Zaki, &amp; Goodman (2015). Affective Cognition: Exploring lay theories of emotion. <i>Cognition</i>.
-              </li>
-            </ul>
-          </div>
+        <div class="card">
+          <h3>Controlled Trials to Classrooms</h3>
+          <p>Analysis code for Chen et al. (2022) on real-world effectiveness of social-psychological interventions</p>
+          <a href="https://desmond-ong.github.io/ControlledTrialsToClassrooms/ECoach_analysis.html" class="btn btn-outline" target="_blank" style="margin-top: 1rem;">View formatted HTML analysis→</a>
+          <br><br>
+          <small>
+            Chen et al. (2022) Real-World Effectiveness of a Social-Psychological Intervention Translated from Controlled Trials to Classrooms. <i>npj Science of Learning</i>.
+          </small>
         </div>
 
+        <div class="card">
+          <h3>Explore, Exploit, Prune </h3>
+          <p>Analysis code and materials from Chen et al. (2021)</p>
+          <a href="https://desmond-ong.github.io/resourceUse/EEP_resourceUse_public_cleaned.html" class="btn btn-outline" style="margin-top: 1rem;">View formatted HTML analysis→</a>
+          <a href="https://www.openicpsr.org/openicpsr/project/127301/version/V1/view" class="btn btn-outline" style="margin-top: 1rem;">View on ICPSR→</a>
+          <br><br>
+          <small>
+          Chen, P.*, <strong>Ong, D. C.*</strong>, Ng, J., & Coppola, B. P. (2021). Explore, Exploit, and Prune in the Classroom: Strategic Resource Management Behaviors Predict Performance. <i>AERA Open</i>.
+          </small>
+        </div>
+
+        <div class="card">
+          <h3>Strategic Resource Use</h3>
+          <p>Analysis code and materials from Chen et al. (2017) on resource management in learning</p>
+          <a href="https://desmond-ong.github.io/pubs/2017_PsychScience/final_analysis.html" class="btn btn-outline" style="margin-top: 1rem;">View formatted HTML analysis→</a>
+          <a href="http://osf.io/5fr3d" class="btn btn-outline" style="margin-top: 1rem;">View on OSF →</a>
+          <br><br>
+          <small>
+          Chen, P., Chavez, O., <strong>Ong, D. C.</strong>, & Gunderson, B. (2017). Strategic Resource Use for Learning: A Self-administered Intervention that Guides Effective Resource Use Enhances Academic Performance. <i>Psychological Science</i>.
+          </small>
+        </div>
+      
 
 
+      <div class="card">
+          <!-- <h3> Psychological Distance </h3> -->
+          <h3>Analysis code and materials from Ong et al. (2018) on psychological distance in emotion attribution</h3>
+          <a href="https://desmond-ong.github.io/emotionPsychDistance/psychDistance_analysis.html" class="btn btn-outline" style="margin-top: 1rem;">View formatted HTML analysis→</a>
+          <a href="https://desmond-ong.github.io/emotionPsychDistance/" class="btn btn-outline" style="margin-top: 1rem;">View on Github →</a>
+          <br><br>
+          <small>
+          <strong>Ong, D. C.</strong>, Goodman, N. D., & Zaki, J. (2018). Happier than thou? A self-enhancement bias in emotion attribution. <i>Emotion</i>. 
+          </small>
+        </div>
+
+        <div class="card">
+          <!-- <h3> Psychological Distance </h3> -->
+          <h3>Analysis code and materials from Ong et al. (2017)</h3>
+          <a href="https://desmond-ong.github.io/CooperationInMoodDisorders/Analysis/TrustGameAnalysis.html" class="btn btn-outline" style="margin-top: 1rem;">View formatted HTML analysis→</a>
+          <a href="https://desmond-ong.github.io/CooperationInMoodDisorders/" class="btn btn-outline" style="margin-top: 1rem;">View on Github →</a>
+          <br><br>
+          <small>
+          <strong>Ong, D. C.</strong>, Zaki, J. & Gruber, J. (2017). Increased cooperative behavior across remitted bipolar I disorder and major depression: Insights utilizing a behavioral economic trust game. <i>Journal of Abnormal Psychology</i>.. 
+          </small>
+        </div>
+
+        <div class="card">
+          <h3>Analysis code and materials from Ong et al. (2015)</h3>
+          <a href="https://desmond-ong.github.io/affCog/affCog_analysis.html" class="btn btn-outline" style="margin-top: 1rem;">View formatted HTML analysis→</a>
+          <a href="https://desmond-ong.github.io/affCog/" class="btn btn-outline" style="margin-top: 1rem;">View on Github →</a>
+          <br><br>
+          <small>
+          <strong>Ong, D. C.</strong>, Zaki, J. & Goodman, N. D. (2015). Affective Cognition: Exploring lay theories of emotion. <i>Cognition</i>.
+          </small>
+        </div>
+      </div>
 
 
+    </div>
+  </section>
 
-        <hr>
-        <h5 class="my-3">
-              Below is a list of useful hacks that I've coded. Most of them are on my <a href="https://github.com/desmond-ong/">Github</a> page.
-        </h5>
+  <!-- Useful Code Hacks -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Useful Code Hacks</h2>
+      </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  #pin: Bonus workers on Amazon Mechanical Turk 
-                </h5>
-                <p class="card-text">
-                  I wrote a simple python script to automate awarding bonuses to workers on Mechanical Turk (mTurK). You can find it <a href="https://github.com/desmond-ong/amtBonusScript">here</a>. It requires Amazon Command Line Tools.
-                </p>
-              </div> 
-            </div>
-          </div>
+      <p style="margin-bottom: 2rem;">
+        Here are some code utilities and hacks I've developed over the years that might be useful for behavioral researchers, as well as some useful hacks that I've collected from various places around the internet
+      </p>
 
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Programatically downloading .csv data from Qualtrics and reading it into R 
-                </h5>
-                <p class="card-text">
-                  I wrote an R function to do this <a href="https://github.com/desmond-ong/QualtricsToR">here</a>.
-                  The readme on that page also has the plain cURL code and links to the Qualtrics API documentation so you can experiment on your own!
-                </p>
-              </div> 
-            </div>
-          </div>
+      <div class="code-hacks-grid">
+      <div class="card">
+        <h3>Amazon Mechanical Turk Bonus Script</h3>
+        <p>Python script to programmatically pay bonuses to workers on Amazon Mechanical Turk. Requires Amazon Command Line Tools.</p>
+        <a href="https://github.com/desmond-ong/amtBonusScript" class="card-link" target="_blank">View on GitHub →</a>
+      </div>
 
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Continuous version of the Inclusion of Other in Self (IOS) scale 
-                </h5>
-                <p class="card-text">
-                  <a href="https://github.com/desmond-ong/psychWidgets/">A simple Javascript implementation</a> (using Raphael.js) of a continuous version of the Inclusion of Other in Self scale (Aron, Aron, &amp; Smollan, 1982).
-                </p>
-              </div> 
-            </div>
-          </div>
+      <div class="card">
+        <h3>Qualtrics to R Integration</h3>
+        <p>R function to programmatically download survey data from Qualtrics directly into your R environment.</p>
+        <a href="https://github.com/desmond-ong/QualtricsToR" class="card-link" target="_blank">View on GitHub →</a>
+      </div>
 
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  One-line redaction of identifiable information in R
-                </h5>
-                <p class="card-text">
-                  Simple one liner to replace identifiable information (e.g. mTurk workerids). (Has some cons, but it's fast.)
-                  <br>
-                  <code>d0$workerid_random <- match(d0$workerid, unique(sort(d0$workerid)))</code>
-                <br><br> 
-                If you want to be even cooler and use a one-way hash function, here's a one-liner using the <code>digest()</code> function (from the <code>digest</code> package): <br><br>
+      <div class="card">
+        <h3>Continuous Inclusion of Other in Self (IOS) Scale</h3>
+        <p>JavaScript implementation of a continuous IOS scale using Raphael.js for online experiments.</p>
+        <a href="https://github.com/desmond-ong/psychWidgets/" class="card-link" target="_blank">View on GitHub →</a>
+      </div>
 
-                  <code>library(digest); d0$workerid_hash <- substr(sapply(as.character(d0$workerid), digest, algo="md5", serialize=F), 1, 6)</code>
-
-                  <br><br> (the code above: (1) converts workerid into a character string, (2) uses <code>sapply()</code> to apply <code>digest()</code> vectorially, (3) takes the first 6 characters of the resulting string.)
-                </p>
-              </div> 
-            </div>
-          </div>
+      <!-- <div class="card" style="margin-bottom: 1.5rem;">
+        <h3>colorMeText</h3>
+        <p>Interactive web-based text visualization tool for sentiment analysis and coloring text by emotion or other dimensions.</p>
+        <a href="https://github.com/desmond-ong/colorMeText" class="card-link" target="_blank">View on GitHub →</a>
+      </div> -->
 
 
+      <div class="card">
+        <h3>One-line redaction of identifiable information in R</h3>
+        <p>
+            Simple one liner to replace identifiable information (e.g. mTurk workerids). (Has some cons, but it's fast.)
+            <br>
+            <code>d0$workerid_random <- match(d0$workerid, unique(sort(d0$workerid)))</code>
+          <br><br> 
+          If you want to be even cooler and use a one-way hash function, here's a one-liner using the <code>digest()</code> function (from the <code>digest</code> package): <br><br>
 
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  colorMeText
-                </h5>
-                <p class="card-text">
-                  During one of our lab hackathons, Justine Kao, Greg Scontras, and I coded up a little interactive web text-visualization demo: <a href="https://github.com/desmond-ong/colorMeText">colorMeText</a>, which basically colors input text according to ratings using some dictionary (e.g. useful for sentiment analysis, or any other dimension of interest). It's still a work in progress!
-                </p>
-              </div> 
-            </div>
-          </div>
+            <code>library(digest); d0$workerid_hash <- substr(sapply(as.character(d0$workerid), digest, algo="md5", serialize=F), 1, 6)</code>
 
+            <br><br> (the code above: (1) converts workerid into a character string, (2) uses <code>sapply()</code> to apply <code>digest()</code> vectorially, (3) takes the first 6 characters of the resulting string.)
+        </p>
+      </div>
 
-        </div> <!-- End div class=row -->
+      <div class="card">
+        <h3>(Painlessly) updating R</h3>
+        <p>
+            A neat and simple trick to update R and re-install all your packages <a href="http://stackoverflow.com/questions/1401904/painless-way-to-install-a-new-version-of-r">here</a>.
+        </p>
+      </div>
 
-        <hr>
-        <h5 class="my-3">
-              The following are useful hacks that I've collected from various places around the internet.
-        </h5>
+      <div class="card">
+        <h3>Data Munging: Concatenate many (e.g. .csv) files in Terminal.</h3>
+        <p>
+            Sometimes you just want to concatenate all the data files in a directory into one big file. If it's in a format like .csv, and you want to skip the first header, you can use the following command in Terminal:
+            <br>
+              <code>awk 'FNR > 1' *.csv > combined_file.csv</code>
+        </p>
+      </div>
 
-        <div class="row">
+<!--       <div class="card">
+        <h3>Compressing PDFs on a Mac</h3>
+        <p>
+            Although Preview on a Mac can compress (Export->Quartz Filter->Reduce File Size), the images become really low quality. The solution I used was pdfcompress.com, which provided reasonable results.
+        </p>
+      </div> -->
 
+<!--      <div class="card">
+        <h3>GIF making</h3>
+        <p>
+            I use GIFFun, which is pretty alright if you just need the basic essentials.
+            <br>
+            There's also a neat guide here that I haven't tried, using <a href="http://davidcsonka.com/blog/how-make-animated-gif-command-line-linux">ImageMagick on the command line</a>.
+        </p>
+      </div> -->
 
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  (Painlessly) updating R
-                </h5>
-                <p class="card-text">
-                  A neat and simple trick to update R and re-install all your packages <a href="http://stackoverflow.com/questions/1401904/painless-way-to-install-a-new-version-of-r">here</a>.
-                </p>
-              </div> 
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Data Munging: Concatenate many (e.g. .csv) files in Terminal.
-                </h5>
-                <p class="card-text">
-                  Sometimes you just want to concatenate all the data files in a directory into one big file. If it's in a format like .csv, and you want to skip the first header, you can use the following command in Terminal:
-                  <br>
-                    <code>awk 'FNR > 1' *.csv > combined_file.csv</code>
-                </p>
-              </div> 
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Compressing PDFs on a Mac
-                </h5>
-                <p class="card-text">
-                   Although Preview on a Mac can compress (Export->Quartz Filter->Reduce File Size), the images become really low quality. The solution I used was pdfcompress.com, which provided reasonable results.
-                </p>
-              </div> 
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  GIF making
-                </h5>
-                <p class="card-text">
-                  I use GIFFun, which is pretty alright if you just need the basic essentials.
-                  <br>
-                  There's also a neat guide here that I haven't tried, using <a href="http://davidcsonka.com/blog/how-make-animated-gif-command-line-linux">ImageMagick on the command line</a>.
-                </p>
-              </div> 
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Destructively crop pdfs (useful for LaTeX-ing)
-                </h5>
-                <p class="card-text">
-                  If you crop a pdf file in Preview, it doesn't destructively crop it. The parts you cropped out are still hidden in the file (i.e. so you can undo cropping). I've found that this gives trouble with LaTeX when it doesn't recognize the bounding boxes. If you need to destructively crop the file, one way to do it is using Ghostscript. Let's say you want to crop "in.pdf" to "out.pdf" (note that you can't use the same filename, because of the way gs works), at the command line, type: 
+     <div class="card" style="margin-bottom: 1.5rem;">
+        <h3>Destructively crop pdfs (useful for LaTeX-ing)</h3>
+        <p>
+            If you crop a pdf file in Preview, it doesn't destructively crop it. The parts you cropped out are still hidden in the file (i.e. so you can undo cropping). I've found that this gives trouble with LaTeX when it doesn't recognize the bounding boxes. If you need to destructively crop the file, one way to do it is using Ghostscript. Let's say you want to crop "in.pdf" to "out.pdf" (note that you can't use the same filename, because of the way gs works), at the command line, type: 
                   <br>
                     <code>gs -sDEVICE=pdfwrite -dUseCropBox -sOutputFile=out.pdf - < in.pdf</code>
-                </p>
-              </div> 
-            </div>
-          </div>
+        </p>
+      </div>
 
-          <!-- <div class="col-lg-12 col-sm-12 portfolio-item"> -->
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Convert Files to EPS (useful for LaTeX-ing)
-                </h5>
-                <p class="card-text">
-                  Reference: http://electron.mit.edu/~gsteele/pdf/ <br>
-                </p>
-                    <p style="border: 1px solid #999;
+     <div class="card" style="margin-bottom: 1.5rem;">
+        <h3>Convert Files to EPS (useful for LaTeX-ing)</h3>
+        <p>
+            Reference: http://electron.mit.edu/~gsteele/pdf/ <br>
+            <p style="border: 1px solid #999;
     page-break-inside: avoid; padding: 1rem; font-style: italic;">
                     [Postscript] Level 1 uses only ascii-coded RGB values, and is very wasteful, producing very large files. Level 2 includes support for JPEG encoded images, which produces much smaller files. Level 3 includes support for Zlib compression, making it well suited for making EPS files from png files.
                     <br><br>
@@ -306,48 +263,28 @@
                     <br><br>
                     Using level 3 postscript from a png image file for scientific figures will often produce a very small eps file. Ghostscript is compatible with these level 3 eps files, so this is often a good way to go.
                   </p>
-              </div> 
-            </div>
-          </div>
+        </p>
+      </div>
 
-
-          <!-- <div class="col-lg-12 col-sm-12 portfolio-item"> -->
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Set Default Zoom in MS Word
-                </h5>
-                <p class="card-text">
-                  Here's a simple Macro that you can use so that everytime Microsoft Word opens a new document, it does so at a specific zoom level. (Personally, I like 100% on my Retina Pro.). <br>
+     <div class="card" style="margin-bottom: 1.5rem;">
+        <h3>Set Default Zoom in MS Word</h3>
+        <p>
+            Here's a simple Macro that you can use so that everytime Microsoft Word opens a new document, it does so at a specific zoom level. (Personally, I like 100% on my Retina Pro.). <br>
 
                   1) In Word, Go to Tools->Macro->Macros. <br>
                   2) On the dropbox after "Macros in", click <b>Normal (Global Template)</b> <br>
                   3) Create a new Macro called AutoOpen [This particular name seems to be required for it to be run upon opening]. <br>
                   4) Paste the following macro in, where 100 is the desired zoom percentage. <br>
-            
-              <code>
-                Sub AutoOpen() <br> 
-                &nbsp; &nbsp;    ActiveWindow.ActivePane.View.Zoom.Percentage = 100 <br>
-                End Sub <br>
-              </code>
+                  <code>Sub AutoOpen() <br>ActiveWindow.ActivePane.View.Zoom.Percentage = 100 <br>End Sub </code> <br>
             
             (refs: various places like <a href="https://www.youtube.com/watch?v=1HK_HrxUnKw">this</a> and <a href="http://wordribbon.tips.net/T011024_Automatically_Opening_a_Document_at_a_Specific_Zoom_Setting.html">this</a>.)
+        </p>
+      </div>
 
-                </p>
-              </div> 
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-12 col-sm-12 portfolio-item"> -->
-          <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Increase Mouse Sensitivity on Mac OS X
-                </h5>
-                <p class="card-text">
-                  I love having really high sensitivity on my mouse/trackpad. Unfortunately, the maximum that you can go in System Preferences isn't high enough for me. There is a way to increase this sensitivity further. In Terminal, typing: <br>
+     <div class="card" style="margin-bottom: 1.5rem;">
+        <h3>Increase Mouse Sensitivity on Mac OS X</h3>
+        <p>
+            I love having really high sensitivity on my mouse/trackpad. Unfortunately, the maximum that you can go in System Preferences isn't high enough for me. There is a way to increase this sensitivity further. In Terminal, typing: <br>
               <code>defaults read -g com.apple.mouse.scaling</code>
                 <br>
               will give you the current value of your mouse scaling. You can modify it by changing <code>read</code> to <code>write</code>. For example, if you want to set your mouse scaling to 3.0 (the maximum in System Preferences), type:
@@ -355,38 +292,24 @@
               <code>defaults write -g com.apple.mouse.scaling 3.0</code>
               <br>
                 In addition, to change the trackpad, use <code>com.apple.trackpad.scaling</code>. You can also use <code>.scrolling</code> to change scrolling speed.
-                </p>
-              </div> 
-            </div>
-          </div>
-
-      </div> <!-- End div class="row" -->
-
-
-
-    </div>  <!-- End Page Content -->
-
-    <footer class="py-3 bg-light">
-      <div class="container">
-        <!-- <p class="m-0 text-muted"> created by Desmond C. Ong using Bootstrap. Layout last updated November 2017. </p> -->
-        <p class="m-0"> created by Desmond C. Ong using Bootstrap. Layout last updated May 2022. </p>
+        </p>
       </div>
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-        <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      </div> <!-- /code-hacks-grid -->
 
-      ga('create', 'UA-47712847-1', 'stanford.edu');
-      ga('send', 'pageview');
+    </div>
+  </section>
 
-    </script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://scholar.google.com/citations?user=BrgeiJAAAAAJ&hl=en" target="_blank">Google Scholar</a>
+      <a href="https://github.com/desmond-ong/" target="_blank">GitHub</a>
+      <a href="mailto:desmond.ong@utexas.edu">Email</a>
+      <a href="https://cascoglab.psy.utexas.edu" target="_blank">Lab Website</a>
+    </div>
+    <p>© 2026 Desmond C. Ong · University of Texas at Austin</p>
+  </footer>
 
-  </body>
-
+</body>
 </html>
