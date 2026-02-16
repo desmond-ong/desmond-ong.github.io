@@ -256,5 +256,13 @@
     <p>© 2026 Desmond C. Ong · University of Texas at Austin</p>
   </footer>
 
+  <!-- Mobile Menu Toggle -->
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+      this.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>

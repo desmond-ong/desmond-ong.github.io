@@ -155,6 +155,7 @@ em, i {
   align-items: center;
   justify-content: space-between;
   height: 64px;
+  position: relative;
 }
 
 .nav-brand {
@@ -568,8 +569,8 @@ em, i {
 
   .hero-img {
     margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 240px;
   }
 
   .hero-content h1 {
@@ -582,10 +583,45 @@ em, i {
 
   .nav-links {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-white);
+    flex-direction: column;
+    gap: 0;
+    padding: var(--space-md) 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid var(--border);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: var(--space-sm) var(--space-md);
+    border-bottom: none;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    background: var(--bg-light);
+    border-bottom: none;
   }
 
   .nav-toggle {
     display: block;
+  }
+
+  .nav-toggle.active {
+    color: var(--burnt-orange);
   }
 
   .cards {
